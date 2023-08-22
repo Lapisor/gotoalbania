@@ -26,10 +26,13 @@ public class interactable : MonoBehaviour
     }
     public void contactSecondaryInteractable()
     {
-        interactObject.GetComponent<openTheDoor>().secondaryInteractionFunction();
-        if(GetComponentInChildren<exitTheHouse>() != null)
+        if (interactObject.GetComponent<openTheDoor>() != null)
         {
-            GetComponentInChildren<exitTheHouse>().interactionFunction();
-        }       
+            interactObject.GetComponent<openTheDoor>().secondaryInteractionFunction();
+        }
+        if (interactObject.GetComponent<exitTheHouse>() != null)
+        {
+            interactObject.GetComponent<exitTheHouse>().interactionFunction();
+        }  
     }
 }

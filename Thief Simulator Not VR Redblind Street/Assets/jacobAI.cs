@@ -22,6 +22,20 @@ public class jacobAI : MonoBehaviour
 
     public bool patrolling = true;
 
+    public float mRaycastRadius;  // width of our line of sight (x-axis and y-axis)
+    public float mTargetDetectionDistance;  // depth of our line of sight (z-axis)
+
+    private RaycastHit _mHitInfo;   // allocating memory for the raycasthit
+    // to avoid Garbage
+    private bool _bHasDetectedEnnemy = false;   // tracking whether the player
+    // is detected to change color in gizmos
+    public bool notDetecting;
+
+    public float loseInterestTimer;
+    public float loseInterestTimerMax = 4f;
+
+    public bool losingInterest;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +48,7 @@ public class jacobAI : MonoBehaviour
             this.GetComponent<NavMeshAgent>().autoBraking = false;
             goToNextPoint();
         }
+        loseInterestTimer = loseInterestTimerMax;
     }
 
     // Update is called once per frame
@@ -51,19 +66,45 @@ public class jacobAI : MonoBehaviour
         {
             real = true;
         }
-        if (!this.GetComponent<NavMeshAgent>().pathPending && this.GetComponent<NavMeshAgent>().remainingDistance < 0.5f)
+        if (!this.GetComponent<NavMeshAgent>().pathPending && this.GetComponent<NavMeshAgent>().remainingDistance < 0.5f && patrolling)
         {
             goToNextPoint();
         }
-            
+        if (losingInterest)
+        {
+            loseInterestTimer -= 1 * Time.deltaTime;
+        }
+        if(loseInterestTimer <= 0)
+        {
+            patrolling = true;
+            losingInterest = false;
+            loseInterestTimer = loseInterestTimerMax;
+            this.GetComponent<NavMeshAgent>().isStopped = true;
+            goToNextPoint();
+        }
     }
 
+    private void OnDrawGizmos()
+    {
+        if (_bHasDetectedEnnemy)
+        {
+            Gizmos.color = Color.red;
+        }
+        else
+        {
+            Gizmos.color = Color.green;
+        }
 
+        Gizmos.matrix = transform.localToWorldMatrix;
+
+        Gizmos.DrawCube(new Vector3(0f, 0f, mTargetDetectionDistance / 2f), new Vector3(mRaycastRadius, mRaycastRadius, mTargetDetectionDistance));
+    }
 
     void FixedUpdate()
     {
         if (real)
         {
+            CheckForTargetInLineOfSight();
             timer -= 1 * Time.deltaTime;
             if (timer <= 0)
             {
@@ -83,12 +124,17 @@ public class jacobAI : MonoBehaviour
                     this.GetComponent<AudioSource>().PlayOneShot(clip3, 0.3f);
                 }
             }
+            if(patrolling != true && notDetecting)
+            {
+                losingInterest = true;
+            }
         }
         
     }
 
     void goToNextPoint()
     {
+        this.GetComponent<NavMeshAgent>().isStopped = false;
         // Returns if no points have been set up
         if (points.Length == 0)
         {
@@ -96,10 +142,37 @@ public class jacobAI : MonoBehaviour
         }
 
         // Set the agent to go to the currently selected destination.
-        this.GetComponent<NavMeshAgent>().destination = points[destPoint].position;
-
+        if (patrolling)
+        {
+            this.GetComponent<NavMeshAgent>().destination = points[destPoint].position;
+        }
         // Choose the next point in the array as the destination,
         // cycling to the start if necessary.
-        destPoint = (destPoint + 1) % points.Length;
+        if (patrolling)
+        {
+            destPoint = (destPoint + 1) % points.Length;
+        }
+    }
+
+    public void CheckForTargetInLineOfSight()
+    {
+        _bHasDetectedEnnemy = Physics.SphereCast(transform.position, mRaycastRadius, transform.forward, out _mHitInfo, mTargetDetectionDistance);
+        if (_bHasDetectedEnnemy)
+        {
+            if (_mHitInfo.transform.gameObject.tag == "Player")
+            {
+                notDetecting = false;
+                patrolling = false;
+                this.GetComponent<NavMeshAgent>().SetDestination(_mHitInfo.transform.position);
+                // insert fighting logic here
+            }
+            else
+            {
+                notDetecting = true;
+                Debug.Log("No Player detected");
+                // no player detected, insert your own logic
+            }
+        }
+        
     }
 }
