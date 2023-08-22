@@ -8178,6 +8178,7 @@ Transform:
   - {fileID: 1390513189}
   - {fileID: 1499159751}
   - {fileID: 22544114}
+  - {fileID: 1056795262}
   - {fileID: 134439654}
   - {fileID: 951156359}
   - {fileID: 877284200}
@@ -8281,7 +8282,6 @@ Transform:
   - {fileID: 253963069}
   - {fileID: 566526933}
   - {fileID: 1926109650}
-  - {fileID: 1056795262}
   - {fileID: 926155257}
   - {fileID: 1273587766}
   - {fileID: 1438844687}
@@ -21690,7 +21690,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 417420899}
-  m_RootOrder: 436
+  m_RootOrder: 333
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1059251644
 PrefabInstance:
@@ -32923,7 +32923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1559928049
 AudioSource:
   m_ObjectHideFlags: 0
