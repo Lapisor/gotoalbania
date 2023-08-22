@@ -37,7 +37,7 @@ public class jacobAI : MonoBehaviour
         }
         if (timerToReal <= 0)
         {
-            real = true;
+            //real = true;
         }
     }
 
