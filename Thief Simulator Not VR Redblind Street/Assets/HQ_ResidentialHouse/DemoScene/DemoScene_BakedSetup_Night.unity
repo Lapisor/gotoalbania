@@ -629,7 +629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mass: 1000
   value: 6000
-  name: Potted Plant
+  name: Stove
 --- !u!4 &22544114 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000012277584606, guid: 915a74cef5755594aa262f842d8ac445,
@@ -5820,7 +5820,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000010878382950, guid: 150f7bb8dca653847a498f604e288454, type: 3}
       propertyPath: m_TagString
-      value: jacob
+      value: object
       objectReference: {fileID: 0}
     - target: {fileID: 4000013048671710, guid: 150f7bb8dca653847a498f604e288454, type: 3}
       propertyPath: m_RootOrder
@@ -10685,7 +10685,7 @@ GameObject:
   - component: {fileID: 518766226}
   - component: {fileID: 518766229}
   - component: {fileID: 518766225}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11875,7 +11875,7 @@ GameObject:
   - component: {fileID: 549394154}
   - component: {fileID: 549394153}
   - component: {fileID: 549394152}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12424,7 +12424,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 578907932}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12966,6 +12966,7 @@ GameObject:
   - component: {fileID: 605393748}
   - component: {fileID: 605393747}
   - component: {fileID: 605393746}
+  - component: {fileID: 605393749}
   m_Layer: 0
   m_Name: Floor_kitchen
   m_TagString: Untagged
@@ -13000,7 +13001,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 39b1db353848cad4eb16a1f2d58a60d2, type: 3}
 --- !u!23 &605393747
@@ -13052,6 +13053,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605393744}
   m_Mesh: {fileID: 4300000, guid: 39b1db353848cad4eb16a1f2d58a60d2, type: 3}
+--- !u!65 &605393749
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605393744}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.5962973, y: 0.0060009807, z: 4.2389483}
+  m_Center: {x: 1.5355334, y: 0.2030004, z: -1.9478451}
 --- !u!1001 &609432626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16596,7 +16610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 758867559}
   - component: {fileID: 758867558}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: OpningCutsen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19096,6 +19110,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 603052763}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &885717661
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885717660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: d6888a9ea1181b146b90c31267f45192, type: 3}
 --- !u!114 &885717662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19111,20 +19139,6 @@ MonoBehaviour:
   mass: 30
   value: 20
   name: Potted Plant
---- !u!136 &885717663
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 885717660}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.33
-  m_Height: 1.53
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.61, z: 0}
 --- !u!1001 &886832016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20539,7 +20553,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 932705455}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20657,7 +20671,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1277966274570706, guid: e178383ca0e5bfc4d9f328ceaf547c68, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1978137888114846, guid: e178383ca0e5bfc4d9f328ceaf547c68, type: 3}
       propertyPath: m_Name
@@ -20665,7 +20679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1978137888114846, guid: e178383ca0e5bfc4d9f328ceaf547c68, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1978137888114846, guid: e178383ca0e5bfc4d9f328ceaf547c68, type: 3}
       propertyPath: m_IsActive
@@ -23228,7 +23242,7 @@ GameObject:
   - component: {fileID: 1067667127}
   - component: {fileID: 1067667126}
   - component: {fileID: 1067667125}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26918,8 +26932,16 @@ PrefabInstance:
       value: FPSController
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_RootOrder
@@ -38192,7 +38214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1696625482}
   - component: {fileID: 1696625483}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Audio Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38796,7 +38818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1730954196}
   - component: {fileID: 1730954197}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Reflection Probe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39220,7 +39242,7 @@ GameObject:
   - component: {fileID: 1744859355}
   - component: {fileID: 1744859354}
   - component: {fileID: 1744859353}
-  m_Layer: 2
+  m_Layer: 5
   m_Name: DetectionCuboid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39259,7 +39281,6 @@ MonoBehaviour:
   Jacob: {fileID: 1756384419}
   exitScreen: {fileID: 2013603388}
   theText2: {fileID: 1690456480}
-  fireplace: {fileID: 2100000, guid: 73e75010f447d2e4baa6db18e837a5ec, type: 2}
 --- !u!65 &1744859354
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41883,9 +41904,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 578907932}
     m_Modifications:
+    - target: {fileID: 1277966274570706, guid: e178383ca0e5bfc4d9f328ceaf547c68, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1978137888114846, guid: e178383ca0e5bfc4d9f328ceaf547c68, type: 3}
       propertyPath: m_Name
       value: Crowbar 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978137888114846, guid: e178383ca0e5bfc4d9f328ceaf547c68, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1978137888114846, guid: e178383ca0e5bfc4d9f328ceaf547c68, type: 3}
       propertyPath: m_IsActive
@@ -43419,6 +43448,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 417420899}
     m_Modifications:
+    - target: {fileID: 141322, guid: 5fdca4633f9ce7647af87745ddf42a6b, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 489426, guid: 5fdca4633f9ce7647af87745ddf42a6b, type: 3}
       propertyPath: m_RootOrder
       value: 130
@@ -48649,6 +48682,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2105311592}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2106291575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011924640368, guid: 51f30c8d86fc27a4f90e4ab4548a7793,
+    type: 3}
+  m_PrefabInstance: {fileID: 603052763}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2106291577
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106291575}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: d6888a9ea1181b146b90c31267f45192, type: 3}
 --- !u!1 &2107633434 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000010833402482, guid: e314127c45159db4ea6ffe4e5f876747,
