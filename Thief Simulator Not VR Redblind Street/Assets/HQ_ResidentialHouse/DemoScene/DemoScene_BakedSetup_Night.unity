@@ -21877,6 +21877,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_Layer
       value: 5
@@ -32217,7 +32221,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756384419}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 714df7e844a2db04f8d2b3ee3ac7741a, type: 3}
   m_Name: 
@@ -32239,6 +32243,12 @@ MonoBehaviour:
   real: 1
   timerToReal: 15
   patrolling: 1
+  mRaycastRadius: 0
+  mTargetDetectionDistance: 0
+  notDetecting: 0
+  loseInterestTimer: 0
+  loseInterestTimerMax: 4
+  losingInterest: 0
 --- !u!195 &1756384421
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -40602,6 +40612,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DiningStealables
       objectReference: {fileID: 0}
+    - target: {fileID: 1435984486411338584, guid: 21342e06fb306ec49b6600fcf16c67bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2319288140671377811, guid: 21342e06fb306ec49b6600fcf16c67bd,
         type: 3}
       propertyPath: mass
@@ -40621,6 +40636,71 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: object
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331087959662349030, guid: 21342e06fb306ec49b6600fcf16c67bd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331087959662349030, guid: 21342e06fb306ec49b6600fcf16c67bd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331087959662349030, guid: 21342e06fb306ec49b6600fcf16c67bd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331087959662349030, guid: 21342e06fb306ec49b6600fcf16c67bd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331087959662349030, guid: 21342e06fb306ec49b6600fcf16c67bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331087959662349030, guid: 21342e06fb306ec49b6600fcf16c67bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331087959662349030, guid: 21342e06fb306ec49b6600fcf16c67bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331087967957681528, guid: 21342e06fb306ec49b6600fcf16c67bd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.048
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331087967957681528, guid: 21342e06fb306ec49b6600fcf16c67bd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331087967957681528, guid: 21342e06fb306ec49b6600fcf16c67bd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331087967957681528, guid: 21342e06fb306ec49b6600fcf16c67bd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331087967957681528, guid: 21342e06fb306ec49b6600fcf16c67bd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331087967957681528, guid: 21342e06fb306ec49b6600fcf16c67bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3381303329283623042, guid: 21342e06fb306ec49b6600fcf16c67bd,
         type: 3}
