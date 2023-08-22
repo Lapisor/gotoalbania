@@ -15,7 +15,8 @@ public class playerObjDetector : MonoBehaviour
     public GameObject Jacob;
 
     public GameObject exitScreen;
-    public TextMeshProUGUI theText2;
+
+    public GameObject selectedObject;
 
     // Start is called before the first frame update
     void Start()
@@ -31,15 +32,16 @@ public class playerObjDetector : MonoBehaviour
 
     public void OnTriggerStay(Collider other)
     {
-        if (other.tag == "object")
+        selectedObject = other.gameObject;
+        if (selectedObject.tag == "object")
         {
             theText.gameObject.SetActive(true);
             theText.text = "'E' to pick up " + other.GetComponent<StealableObject>().name;
             if (Input.GetKey(KeyCode.E))    
             {
-                player.monies += other.GetComponent<StealableObject>().value;
+                player.monies += selectedObject.GetComponent<StealableObject>().value;
                 player.weightCarried += other.GetComponent<StealableObject>().mass;
-                other.gameObject.SetActive(false);
+                selectedObject.gameObject.SetActive(false);
                 theText.gameObject.SetActive(false);
                 theUpdater.updateGoddammit();
                 Jacob.GetComponent<NavMeshAgent>().speed += 0.1f;
@@ -49,38 +51,30 @@ public class playerObjDetector : MonoBehaviour
                 Jacob.GetComponent<NavMeshAgent>().angularSpeed += 45f;
             }
         }
-        if (other.tag == "fire")
+        if (selectedObject.tag == "interactable")
         {
             theText.gameObject.SetActive(true);
-            theText.text = "'E' to put out Jacob's only source of warmth in his life";
-            if (Input.GetKey(KeyCode.E))
-            {
-                other.gameObject.SetActive(false);
-                theText.gameObject.SetActive(false);
-                theUpdater.updateGoddammit();
-                Jacob.GetComponent<NavMeshAgent>().speed += 0.1f;
-                Jacob.GetComponent<NavMeshAgent>().acceleration += 0.1f;
-                Jacob.GetComponent<NavMeshAgent>().angularSpeed += 45f;
-            }
-        }
-        if (other.tag == "interactable")
-        {
-            theText.gameObject.SetActive(true);
-            theText.text = "'E' to leave";
-            if (Input.GetKey(KeyCode.E))
-            {
+            theText.text = selectedObject.GetComponent<interactable>().displayMessage;
 
-                GetComponentInParent<FirstPersonController>().enabled = false;
-                theText.gameObject.SetActive(false);
-                Jacob.GetComponent<NavMeshAgent>().isStopped = true;
-                theText2.text = "You made: £" + player.monies + " tonight";
-                exitScreen.SetActive(true);
+            if (Input.GetKey(KeyCode.E))
+            {
+                selectedObject.GetComponent<interactable>().contactInteractable();
+
+            }
+            if (Input.GetKey(KeyCode.F))
+            {
+                selectedObject.GetComponent<interactable>().contactSecondaryInteractable();
+
             }
         }
     }
     public void OnTriggerExit(Collider other)
     {
         if (other.tag == "object")
+        {
+            theText.gameObject.SetActive(false);
+        }
+        if (other.tag == "interactable")
         {
             theText.gameObject.SetActive(false);
         }
