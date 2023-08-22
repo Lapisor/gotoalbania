@@ -6,6 +6,7 @@ public class interactable : MonoBehaviour
 {
 
     public string displayMessage;
+    public GameObject interactObject;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,10 @@ public class interactable : MonoBehaviour
     }
     public void contactSecondaryInteractable()
     {
-        GetComponentInChildren<exitTheHouse>().interactionFunction();
-        
+        interactObject.GetComponent<openTheDoor>().secondaryInteractionFunction();
+        if(GetComponentInChildren<exitTheHouse>() != null)
+        {
+            GetComponentInChildren<exitTheHouse>().interactionFunction();
+        }       
     }
 }
