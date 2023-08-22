@@ -7453,6 +7453,25 @@ MonoBehaviour:
   mass: 15
   value: 40
   name: Collection of Books
+--- !u!1 &440894620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 4b34dc267e64b6e40aecec5de029b9d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1343363935}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &440894625
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440894620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.116173, y: 0.09999121, z: 7.7806854}
+  m_Center: {x: 3.342752, y: 0.17, z: 0.32888556}
 --- !u!1 &449063026 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 157914, guid: bafbecc9792c66d43a8ae85b411b5cbe,
@@ -24511,7 +24530,8 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
 --- !u!4 &1343363936 stripped
 Transform:
@@ -31959,7 +31979,7 @@ GameObject:
   - component: {fileID: 1744859355}
   - component: {fileID: 1744859354}
   - component: {fileID: 1744859353}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: DetectionCuboid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32281,7 +32301,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.91
+  m_Radius: 0.56
   m_Height: 2.27
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -32360,7 +32380,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.37
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
