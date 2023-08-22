@@ -49,20 +49,6 @@ public class playerObjDetector : MonoBehaviour
                 Jacob.GetComponent<NavMeshAgent>().angularSpeed += 45f;
             }
         }
-        if (other.tag == "fire")
-        {
-            theText.gameObject.SetActive(true);
-            theText.text = "'E' to put out Jacob's only source of warmth in his life";
-            if (Input.GetKey(KeyCode.E))
-            {
-                other.gameObject.SetActive(false);
-                theText.gameObject.SetActive(false);
-                theUpdater.updateGoddammit();
-                Jacob.GetComponent<NavMeshAgent>().speed += 0.1f;
-                Jacob.GetComponent<NavMeshAgent>().acceleration += 0.1f;
-                Jacob.GetComponent<NavMeshAgent>().angularSpeed += 45f;
-            }
-        }
         if (other.tag == "interactable")
         {
             theText.gameObject.SetActive(true);
