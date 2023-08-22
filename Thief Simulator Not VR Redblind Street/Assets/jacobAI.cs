@@ -5,7 +5,6 @@ using UnityEngine.AI;
 
 public class jacobAI : MonoBehaviour
 {
-
     public Transform playerPos;
     public float timer;
     public int randSFX;
@@ -15,19 +14,32 @@ public class jacobAI : MonoBehaviour
     public float SFXprobRangeLow;
     public float SFXprobRangeHigh;
 
+    public Transform[] points;
+    public int destPoint = 0;
+
     public bool real = false;
     public float timerToReal;
+
+    public bool patrolling = true;
 
     // Start is called before the first frame update
     void Start()
     {
         timer = Random.Range(SFXprobRangeLow, SFXprobRangeHigh);
+        if (real)
+        {
+            // Disabling auto-braking allows for continuous movement
+            // between points (ie, the agent doesn't slow down as it
+            // approaches a destination point).
+            this.GetComponent<NavMeshAgent>().autoBraking = false;
+            goToNextPoint();
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (real && playerPos.GetComponent<playerValues>().nearJacob != true)
+        if (real && playerPos.GetComponent<playerValues>().nearJacob != true && patrolling != true)
         {
             this.GetComponent<NavMeshAgent>().SetDestination(playerPos.position);
         }
@@ -39,6 +51,11 @@ public class jacobAI : MonoBehaviour
         {
             real = true;
         }
+        if (!this.GetComponent<NavMeshAgent>().pathPending && this.GetComponent<NavMeshAgent>().remainingDistance < 0.5f)
+        {
+            goToNextPoint();
+        }
+            
     }
 
 
@@ -68,5 +85,21 @@ public class jacobAI : MonoBehaviour
             }
         }
         
+    }
+
+    void goToNextPoint()
+    {
+        // Returns if no points have been set up
+        if (points.Length == 0)
+        {
+            return;
+        }
+
+        // Set the agent to go to the currently selected destination.
+        this.GetComponent<NavMeshAgent>().destination = points[destPoint].position;
+
+        // Choose the next point in the array as the destination,
+        // cycling to the start if necessary.
+        destPoint = (destPoint + 1) % points.Length;
     }
 }
