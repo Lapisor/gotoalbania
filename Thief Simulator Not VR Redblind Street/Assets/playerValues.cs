@@ -61,16 +61,20 @@ public class playerValues : MonoBehaviour
         if (Jacob.tag == "jacob")
         {
             Jacob.GetComponent<jacobAI>().notDetecting = false;
+            Jacob.GetComponent<jacobAI>().patrolling = false;
             if (nearJacob = true && Jacob.GetComponent<jacobAI>().stunned != true && Jacob.GetComponent<jacobAI>().notDetecting != true)
             {
                 deathSFXplayer.PlayOneShot(deathSound, 1);
+                Jacob.gameObject.GetComponent<jacobAI>().loseInterestTimer = Jacob.gameObject.GetComponent<jacobAI>().loseInterestTimerMax;
+                Jacob.gameObject.GetComponent<jacobAI>().losingInterest = false;
             }
             if(Jacob.GetComponent<jacobAI>().stunned != true && Jacob.GetComponent<jacobAI>().notDetecting != true)
             {
                 countingDown = true;
-                
+                Jacob.gameObject.GetComponent<jacobAI>().loseInterestTimer = Jacob.gameObject.GetComponent<jacobAI>().loseInterestTimerMax;
+                Jacob.gameObject.GetComponent<jacobAI>().losingInterest = false;
             }
-            
+            nearJacob = true;
         }
         
     }

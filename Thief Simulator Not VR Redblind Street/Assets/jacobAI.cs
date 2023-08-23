@@ -27,8 +27,11 @@ public class jacobAI : MonoBehaviour
 
     private RaycastHit _mHitInfo;   // allocating memory for the raycasthit
     // to avoid Garbage
-    private bool _bHasDetectedEnnemy = false;   // tracking whether the player
-    // is detected to change color in gizmos
+    private bool _bHasDetectedEnnemy = false;
+    private bool _bHasDetectedEnnemyL1 = false;
+    private bool _bHasDetectedEnnemyL2 = false;
+    private bool _bHasDetectedEnnemyR1 = false;
+    private bool _bHasDetectedEnnemyR2 = false;
     public bool notDetecting;
 
     public float loseInterestTimer;
@@ -40,6 +43,8 @@ public class jacobAI : MonoBehaviour
     public bool doorSearching;
 
     public bool stunned;
+
+    public Vector3 adjustment;
 
     // Start is called before the first frame update
     void Start()
@@ -172,7 +177,7 @@ public class jacobAI : MonoBehaviour
 
     public void CheckForTargetInLineOfSight()
     {
-        _bHasDetectedEnnemy = Physics.Raycast(transform.position, transform.forward, out _mHitInfo, mTargetDetectionDistance);
+        _bHasDetectedEnnemy = Physics.SphereCast(transform.position, mRaycastRadius, transform.forward, out _mHitInfo, mTargetDetectionDistance);
         if (_bHasDetectedEnnemy)
         {
             if (_mHitInfo.transform.gameObject.tag == "Player")
@@ -191,7 +196,6 @@ public class jacobAI : MonoBehaviour
                 // no player detected, insert your own logic
             }
         }
-        
     }
 
 
