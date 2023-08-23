@@ -1,5 +1,79 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!136 &4870257402765519010
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4869847829999003086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.29
+  m_Height: 1.22
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.45, z: 0}
+--- !u!114 &4870257402765519011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4869847829999003086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 30
+  value: 20
+  name: Potted Plant
+--- !u!114 &7671494210930781352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870257401417319224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0.1
+  value: 5
+  name: Nice Picture
+--- !u!114 &8772148043929103365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870257401531452129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0.1
+  value: 5
+  name: Nice Picture
+--- !u!114 &6968683746643870126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870257401726196647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0.1
+  value: 5
+  name: Nice Picture
 --- !u!1 &4870257402240231587
 GameObject:
   m_ObjectHideFlags: 0
@@ -36,35 +110,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &4870257402765519010
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4869847829999003086}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.29
-  m_Height: 1.22
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.45, z: 0}
---- !u!114 &4870257402765519011
+--- !u!114 &802518500178942930
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4869847829999003086}
+  m_GameObject: {fileID: 4870257402316012097}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 30
-  value: 20
-  name: Potted Plant
+  mass: 0.1
+  value: 5
+  name: Nice Picture
+--- !u!114 &7276302309037179507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870257402493421011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0.1
+  value: 5
+  name: Nice Picture
 --- !u!1001 &4870257401417232986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106,6 +181,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c10fcb226b200345846afbcb102a650, type: 3}
+--- !u!1 &4870257401417319224 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 176482, guid: 4c10fcb226b200345846afbcb102a650,
+    type: 3}
+  m_PrefabInstance: {fileID: 4870257401417232986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4870257401417598888 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 423410, guid: 4c10fcb226b200345846afbcb102a650,
@@ -159,6 +240,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4870257401531294727}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4870257401531452129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 175846, guid: 4b5ccd97fc4d0cc4ab3ecfc9d26d7c2b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4870257401531294727}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4870257401726104897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -200,6 +287,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fa9d4872319d2040b1ec54d68f434ac, type: 3}
+--- !u!1 &4870257401726196647 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 175846, guid: 8fa9d4872319d2040b1ec54d68f434ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 4870257401726104897}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4870257401726402037 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 493748, guid: 8fa9d4872319d2040b1ec54d68f434ac,
@@ -253,6 +346,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4870257402315868887}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4870257402316012097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 143510, guid: 37062ee4538bc2b44bebddf7a9a7d05b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4870257402315868887}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4870257402493334705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -294,6 +393,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f4be148401b86a4bae607cb2c4b1669, type: 3}
+--- !u!1 &4870257402493421011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 176482, guid: 6f4be148401b86a4bae607cb2c4b1669,
+    type: 3}
+  m_PrefabInstance: {fileID: 4870257402493334705}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4870257402493174083 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 423410, guid: 6f4be148401b86a4bae607cb2c4b1669,
