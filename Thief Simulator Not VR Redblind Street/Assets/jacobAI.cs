@@ -172,7 +172,7 @@ public class jacobAI : MonoBehaviour
 
     public void CheckForTargetInLineOfSight()
     {
-        _bHasDetectedEnnemy = Physics.SphereCast(transform.position, mRaycastRadius, transform.forward, out _mHitInfo, mTargetDetectionDistance);
+        _bHasDetectedEnnemy = Physics.Raycast(transform.position, transform.forward, out _mHitInfo, mTargetDetectionDistance);
         if (_bHasDetectedEnnemy)
         {
             if (_mHitInfo.transform.gameObject.tag == "Player")

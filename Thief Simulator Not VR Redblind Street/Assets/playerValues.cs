@@ -44,10 +44,12 @@ public class playerValues : MonoBehaviour
             {
                 if (Jacob.GetComponent<jacobAI>().stunned != true && Jacob.GetComponent<jacobAI>().notDetecting != true)
                 {
-                    deathTimer = maxDeathTime;
+                    
                     murderinTime = true;
-                    countingDown = false;
+                    
                 }
+                deathTimer = maxDeathTime;
+                countingDown = false;
             }
             
         }
@@ -68,7 +70,7 @@ public class playerValues : MonoBehaviour
                 countingDown = true;
                 
             }
-            nearJacob = true;
+            
         }
         
     }
@@ -82,7 +84,7 @@ public class playerValues : MonoBehaviour
                 this.GetComponent<FirstPersonController>().enabled = false;
             }
         }
-        
+        nearJacob = true;
     }
 
     public void OnTriggerExit(Collider Jacob)
