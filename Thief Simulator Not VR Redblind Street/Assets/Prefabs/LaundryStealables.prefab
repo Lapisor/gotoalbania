@@ -80,6 +80,20 @@ MonoBehaviour:
   mass: 20
   value: 20
   name: Blinds
+--- !u!64 &4642078682890181430
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319668765751178423}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: a4e3db548278c294892520a03bdf5729, type: 3}
 --- !u!114 &870781770499400323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,6 +109,20 @@ MonoBehaviour:
   mass: 1000
   value: 1500
   name: Washer
+--- !u!64 &5450345169374500922
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319668767022733178}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: c14e0f8acfb3eee4b80cebbb9a2541a3, type: 3}
 --- !u!114 &7123021535029024005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,6 +138,20 @@ MonoBehaviour:
   mass: 1000
   value: 1500
   name: Dryer
+--- !u!64 &7303107546950577449
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319668767242586860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: ab1e1054ed9e15742982de9f7f5e6bd6, type: 3}
 --- !u!1001 &318696252163618020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -212,15 +254,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52c224f1986dc6548b965d461f65f2a2, type: 3}
---- !u!1 &319668767242586860 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000011629216620, guid: 52c224f1986dc6548b965d461f65f2a2,
-    type: 3}
-  m_PrefabInstance: {fileID: 318696252284225920}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &315825301438943680 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013571004480, guid: 52c224f1986dc6548b965d461f65f2a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 318696252284225920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &319668767242586860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011629216620, guid: 52c224f1986dc6548b965d461f65f2a2,
     type: 3}
   m_PrefabInstance: {fileID: 318696252284225920}
   m_PrefabAsset: {fileID: 0}
@@ -391,15 +433,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a76634eb3d2c5d49aafd28d83e9deea, type: 3}
---- !u!4 &318696252825880140 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 495722, guid: 6a76634eb3d2c5d49aafd28d83e9deea,
-    type: 3}
-  m_PrefabInstance: {fileID: 318696252825458214}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &318696252825499286 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 106672, guid: 6a76634eb3d2c5d49aafd28d83e9deea,
+    type: 3}
+  m_PrefabInstance: {fileID: 318696252825458214}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &318696252825880140 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 495722, guid: 6a76634eb3d2c5d49aafd28d83e9deea,
     type: 3}
   m_PrefabInstance: {fileID: 318696252825458214}
   m_PrefabAsset: {fileID: 0}
