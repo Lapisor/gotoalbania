@@ -36,6 +36,9 @@ public class jacobAI : MonoBehaviour
 
     public bool losingInterest;
 
+    public GameObject door;
+    public bool doorSearching;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -77,10 +80,16 @@ public class jacobAI : MonoBehaviour
         if(loseInterestTimer <= 0)
         {
             patrolling = true;
+            this.GetComponent<NavMeshAgent>().speed *= 0.7f;
             losingInterest = false;
             loseInterestTimer = loseInterestTimerMax;
             this.GetComponent<NavMeshAgent>().isStopped = true;
             goToNextPoint();
+        }
+
+        if(this.GetComponent<NavMeshAgent>().velocity.x < 0.1 && this.GetComponent<NavMeshAgent>().velocity.z < 0.1)
+        {
+            doorSearching = true;
         }
     }
 
@@ -161,6 +170,8 @@ public class jacobAI : MonoBehaviour
         {
             if (_mHitInfo.transform.gameObject.tag == "Player")
             {
+                loseInterestTimer = loseInterestTimerMax;
+                losingInterest = false;
                 notDetecting = false;
                 patrolling = false;
                 this.GetComponent<NavMeshAgent>().SetDestination(_mHitInfo.transform.position);
@@ -174,5 +185,32 @@ public class jacobAI : MonoBehaviour
             }
         }
         
+    }
+
+
+    public void OnTriggerStay(Collider other)
+    {
+        if (doorSearching)
+        {
+            if (other.gameObject.tag == "interactable")
+            {
+                if (other.GetComponent<SFXgeneric>() != null)
+                {
+                    door = other.gameObject;
+                    door.GetComponent<interactable>().contactSecondaryInteractable();
+                }
+            }
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (doorSearching)
+        {
+            if (other.gameObject.tag == "interactable")
+            {
+                doorSearching = false;
+            }
+        }
     }
 }

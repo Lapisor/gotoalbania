@@ -21,13 +21,13 @@ public class playerObjDetector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Physics.IgnoreLayerCollision(2,2);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Physics.IgnoreLayerCollision(2, 1);
     }
 
     public void OnTriggerStay(Collider other)
@@ -44,11 +44,14 @@ public class playerObjDetector : MonoBehaviour
                 selectedObject.gameObject.SetActive(false);
                 theText.gameObject.SetActive(false);
                 theUpdater.updateGoddammit();
-                Jacob.GetComponent<NavMeshAgent>().speed += 0.1f;
-                Jacob.GetComponent<NavMeshAgent>().acceleration += 0.1f;
-                Jacob.GetComponent<NavMeshAgent>().speed += (player.monies / 10000);
-                Jacob.GetComponent<NavMeshAgent>().acceleration += (player.monies / 11000);
-                Jacob.GetComponent<NavMeshAgent>().angularSpeed += 45f;
+                if(Jacob.GetComponent<NavMeshAgent>().speed <= 8)
+                {
+                    Jacob.GetComponent<NavMeshAgent>().speed += 0.004f;
+                    Jacob.GetComponent<NavMeshAgent>().acceleration += 0.004f;
+                    Jacob.GetComponent<NavMeshAgent>().speed += (player.monies / 180000);
+                    Jacob.GetComponent<NavMeshAgent>().acceleration += (player.monies / 182000);
+                    Jacob.GetComponent<NavMeshAgent>().angularSpeed += 4f;
+                }
             }
         }
         if (selectedObject.tag == "interactable")
