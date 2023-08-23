@@ -34,4 +34,12 @@ public class jacobAnimController : MonoBehaviour
             this.GetComponent<Animator>().SetBool("Running", true);
         }
     }
+    public void Stun()
+    {
+        nav.isStopped = true;
+    }
+    public void Unstun()
+    {
+        nav.isStopped = false;
+    }
 }

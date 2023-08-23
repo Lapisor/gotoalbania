@@ -27,7 +27,7 @@ public class playerObjDetector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Physics.IgnoreLayerCollision(2, 1);
+        Physics.IgnoreLayerCollision(1, 4);
     }
 
     public void OnTriggerStay(Collider other)
