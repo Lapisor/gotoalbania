@@ -30842,6 +30842,16 @@ PrefabInstance:
       objectReference: {fileID: 1214522296}
     - target: {fileID: 881051845359495653, guid: 7d1c0a31ab806eb41aa82f229bdc57e1,
         type: 3}
+      propertyPath: mRaycastRadius
+      value: 2.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 881051845359495653, guid: 7d1c0a31ab806eb41aa82f229bdc57e1,
+        type: 3}
+      propertyPath: loseInterestTimerMax
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 881051845359495653, guid: 7d1c0a31ab806eb41aa82f229bdc57e1,
+        type: 3}
       propertyPath: points.Array.data[0]
       value: 
       objectReference: {fileID: 718455852}
@@ -30939,6 +30949,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 881051845359495661, guid: 7d1c0a31ab806eb41aa82f229bdc57e1,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d1c0a31ab806eb41aa82f229bdc57e1, type: 3}
