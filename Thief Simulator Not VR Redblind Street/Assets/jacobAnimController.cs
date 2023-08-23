@@ -37,9 +37,11 @@ public class jacobAnimController : MonoBehaviour
     public void Stun()
     {
         nav.isStopped = true;
+        nav.gameObject.GetComponent<jacobAI>().stunned = false;
     }
     public void Unstun()
     {
         nav.isStopped = false;
+        nav.gameObject.GetComponent<jacobAI>().stunned = true;
     }
 }

@@ -56,6 +56,7 @@ public class playerObjDetector : MonoBehaviour
         }
         if (selectedObject.tag == "interactable")
         {
+            if(selectedObject)
             theText.gameObject.SetActive(true);
             theText.text = selectedObject.GetComponent<interactable>().displayMessage;
 
