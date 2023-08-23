@@ -39,6 +39,8 @@ public class jacobAI : MonoBehaviour
     public GameObject door;
     public bool doorSearching;
 
+    public bool stunned;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -90,6 +92,11 @@ public class jacobAI : MonoBehaviour
         if(this.GetComponent<NavMeshAgent>().velocity.x < 0.1 && this.GetComponent<NavMeshAgent>().velocity.z < 0.1)
         {
             doorSearching = true;
+        }
+
+        if(patrolling != true)
+        {
+            notDetecting = false;
         }
     }
 

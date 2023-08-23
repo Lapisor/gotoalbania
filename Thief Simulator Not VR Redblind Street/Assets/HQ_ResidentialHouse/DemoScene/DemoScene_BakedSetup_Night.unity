@@ -5360,7 +5360,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!4 &300839901 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000014131708938, guid: b7aede04273cd084fafb36be851a29a4,
@@ -9254,7 +9254,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 0ad7e9516625e04469149c3dd0e89c60, type: 3}
 --- !u!1001 &534482840
@@ -27906,7 +27906,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1756384420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27949,6 +27949,7 @@ MonoBehaviour:
   losingInterest: 0
   door: {fileID: 0}
   doorSearching: 0
+  stunned: 0
 --- !u!195 &1756384421
 NavMeshAgent:
   m_ObjectHideFlags: 0
