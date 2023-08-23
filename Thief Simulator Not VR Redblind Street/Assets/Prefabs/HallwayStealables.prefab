@@ -147,6 +147,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4870257402240231596}
     m_Modifications:
+    - target: {fileID: 176482, guid: 4c10fcb226b200345846afbcb102a650, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 423410, guid: 4c10fcb226b200345846afbcb102a650, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -200,6 +204,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4870257402240231596}
     m_Modifications:
+    - target: {fileID: 175846, guid: 4b5ccd97fc4d0cc4ab3ecfc9d26d7c2b, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 493748, guid: 4b5ccd97fc4d0cc4ab3ecfc9d26d7c2b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -253,6 +261,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4870257402240231596}
     m_Modifications:
+    - target: {fileID: 175846, guid: 8fa9d4872319d2040b1ec54d68f434ac, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 493748, guid: 8fa9d4872319d2040b1ec54d68f434ac, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -306,6 +318,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4870257402240231596}
     m_Modifications:
+    - target: {fileID: 143510, guid: 37062ee4538bc2b44bebddf7a9a7d05b, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 493762, guid: 37062ee4538bc2b44bebddf7a9a7d05b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -359,6 +375,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4870257402240231596}
     m_Modifications:
+    - target: {fileID: 176482, guid: 6f4be148401b86a4bae607cb2c4b1669, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 423410, guid: 6f4be148401b86a4bae607cb2c4b1669, type: 3}
       propertyPath: m_RootOrder
       value: 5

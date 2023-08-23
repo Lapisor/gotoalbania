@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!64 &8650691481873042888
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928757798961292339}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: a046e3924bf46f54bb7a93a1b646f48a, type: 3}
 --- !u!114 &3876339806181347926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,9 +26,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 2
+  value: 5
+  name: Shampoo
+--- !u!64 &3465320233117068705
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928757799917727686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: 80c33f24508917a4da0de5b9ecceee80, type: 3}
 --- !u!114 &1047901258151149946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27,9 +55,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 2
+  value: 5
+  name: Soap Dispenser
+--- !u!64 &1544737745550552609
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928757801093019539}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: 7dbbc7ff42e32774298792b497e6f1c4, type: 3}
 --- !u!114 &2352711491615846515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,9 +84,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 2
+  value: 5
+  name: Balsam
 --- !u!114 &7779254458454627791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,6 +102,20 @@ MonoBehaviour:
   mass: 10
   value: 15
   name: Wall Lamp
+--- !u!64 &151541828627829230
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928757802110473214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: a046e3924bf46f54bb7a93a1b646f48a, type: 3}
 --- !u!114 &7361554963009119821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,9 +128,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 2
+  value: 5
+  name: Shampoo
 --- !u!114 &710707258907502137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +146,20 @@ MonoBehaviour:
   mass: 10
   value: 15
   name: Wall Lamp
+--- !u!64 &6718746421643245154
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928757802762850106}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: 180a38f113aad6146bc1e1592c264a19, type: 3}
 --- !u!114 &901406441900812265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,9 +172,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 2
+  value: 5
+  name: Toothpaste
 --- !u!1 &3928913375191872285
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,6 +220,7 @@ Transform:
   - {fileID: 3929522731734192682}
   - {fileID: 3929522735227325610}
   - {fileID: 3928913375256663628}
+  - {fileID: 4000013313554251}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -165,9 +236,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 2000
+  value: 5000
+  name: Luxurious Bath Set
 --- !u!114 &6574846515350938018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,9 +251,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 1
+  value: 3
+  name: Painting of City 17 in Poland
+--- !u!64 &1922564348653817659
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928913375256442074}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 27522c57e4013384f9a7eb5d0d5716ed, type: 3}
 --- !u!114 &5454507700581083946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,9 +280,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 2
+  value: 5
+  name: Round Carpet
 --- !u!114 &1367752651292049764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,9 +295,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 500
+  value: 200
+  name: Toilet
 --- !u!114 &1731099637199682347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,9 +310,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 2
+  value: 4
+  name: Towel Hanger
 --- !u!114 &6356167682024219568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,9 +325,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 1
+  value: 3
+  name: Aurora Borealis! At this time of day, at this time of month, localised entirely
+    within this painting!
 --- !u!114 &8665343184264041900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,9 +341,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 2
+  value: 10
+  name: Towel Hanger
 --- !u!114 &2445933650298213828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,9 +356,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 1000
+  value: 1000
+  name: Sink
 --- !u!114 &3509087285167223708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,9 +371,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 20
+  value: 200
+  name: Golden Toilet Paper Holder
 --- !u!114 &4336530783526682067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,9 +386,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 1
+  value: 3
+  name: Painting of City 17 in Poland
 --- !u!114 &2884364811256259323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,9 +401,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  value: 0
-  name: 
+  mass: 2
+  value: 10
+  name: Clothes Basket
+--- !u!1001 &74111243
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3928913375191872286}
+    m_Modifications:
+    - target: {fileID: 4000013248917056, guid: 12d36bfa0cfa70a4dac97ce577e08a80, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013248917056, guid: 12d36bfa0cfa70a4dac97ce577e08a80, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8317084
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013248917056, guid: 12d36bfa0cfa70a4dac97ce577e08a80, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.29390645
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013248917056, guid: 12d36bfa0cfa70a4dac97ce577e08a80, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.1855984
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013248917056, guid: 12d36bfa0cfa70a4dac97ce577e08a80, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7585473
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013248917056, guid: 12d36bfa0cfa70a4dac97ce577e08a80, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013248917056, guid: 12d36bfa0cfa70a4dac97ce577e08a80, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.65161794
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013248917056, guid: 12d36bfa0cfa70a4dac97ce577e08a80, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013248917056, guid: 12d36bfa0cfa70a4dac97ce577e08a80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 81.55601
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 12d36bfa0cfa70a4dac97ce577e08a80, type: 3}
+--- !u!4 &4000013313554251 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4000013248917056, guid: 12d36bfa0cfa70a4dac97ce577e08a80,
+    type: 3}
+  m_PrefabInstance: {fileID: 74111243}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3928913375240560434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -371,15 +508,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6a80c1e41e60c448acf9827d415c6fb, type: 3}
---- !u!1 &3928913375240601788 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 122766, guid: e6a80c1e41e60c448acf9827d415c6fb,
-    type: 3}
-  m_PrefabInstance: {fileID: 3928913375240560434}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3928913375240149382 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 444084, guid: e6a80c1e41e60c448acf9827d415c6fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 3928913375240560434}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3928913375240601788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 122766, guid: e6a80c1e41e60c448acf9827d415c6fb,
     type: 3}
   m_PrefabInstance: {fileID: 3928913375240560434}
   m_PrefabAsset: {fileID: 0}
@@ -558,15 +695,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecee9213f0b9bda47ba210ab61d2dffd, type: 3}
---- !u!4 &3928913375291036795 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 480972, guid: ecee9213f0b9bda47ba210ab61d2dffd,
-    type: 3}
-  m_PrefabInstance: {fileID: 3928913375291474615}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3928913375291316979 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 170052, guid: ecee9213f0b9bda47ba210ab61d2dffd,
+    type: 3}
+  m_PrefabInstance: {fileID: 3928913375291474615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3928913375291036795 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 480972, guid: ecee9213f0b9bda47ba210ab61d2dffd,
     type: 3}
   m_PrefabInstance: {fileID: 3928913375291474615}
   m_PrefabAsset: {fileID: 0}
@@ -623,15 +760,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c58b9e5e2517f794da2624ee0c60ebd7, type: 3}
---- !u!1 &3928757802762850106 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000014168202260, guid: c58b9e5e2517f794da2624ee0c60ebd7,
-    type: 3}
-  m_PrefabInstance: {fileID: 3928913375357915950}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3929522731734192682 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010059088132, guid: c58b9e5e2517f794da2624ee0c60ebd7,
+    type: 3}
+  m_PrefabInstance: {fileID: 3928913375357915950}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3928757802762850106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000014168202260, guid: c58b9e5e2517f794da2624ee0c60ebd7,
     type: 3}
   m_PrefabInstance: {fileID: 3928913375357915950}
   m_PrefabAsset: {fileID: 0}
@@ -697,15 +834,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af9511a7e62af74499cf9e5c98e4343a, type: 3}
---- !u!1 &3928757801641155914 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000012849841858, guid: af9511a7e62af74499cf9e5c98e4343a,
-    type: 3}
-  m_PrefabInstance: {fileID: 3928913375533341576}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3929522735414270832 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013248250104, guid: af9511a7e62af74499cf9e5c98e4343a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3928913375533341576}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3928757801641155914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000012849841858, guid: af9511a7e62af74499cf9e5c98e4343a,
     type: 3}
   m_PrefabInstance: {fileID: 3928913375533341576}
   m_PrefabAsset: {fileID: 0}
@@ -1014,15 +1151,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f484f1eb884699e45b8392c2119e69b0, type: 3}
---- !u!4 &3929522732935336880 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4000010529623882, guid: f484f1eb884699e45b8392c2119e69b0,
-    type: 3}
-  m_PrefabInstance: {fileID: 3928913375967943930}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3928757799917727686 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000012259373884, guid: f484f1eb884699e45b8392c2119e69b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 3928913375967943930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3929522732935336880 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4000010529623882, guid: f484f1eb884699e45b8392c2119e69b0,
     type: 3}
   m_PrefabInstance: {fileID: 3928913375967943930}
   m_PrefabAsset: {fileID: 0}
@@ -1213,15 +1350,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6ef44ba4d88628419a46438021440e5, type: 3}
---- !u!4 &3928913376912433797 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 407158, guid: a6ef44ba4d88628419a46438021440e5,
-    type: 3}
-  m_PrefabInstance: {fileID: 3928913376912299251}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3928913376912158929 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 156706, guid: a6ef44ba4d88628419a46438021440e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 3928913376912299251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3928913376912433797 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 407158, guid: a6ef44ba4d88628419a46438021440e5,
     type: 3}
   m_PrefabInstance: {fileID: 3928913376912299251}
   m_PrefabAsset: {fileID: 0}
