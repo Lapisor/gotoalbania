@@ -45,8 +45,8 @@ public class playerValues : MonoBehaviour
                 if (Jacob.GetComponent<jacobAI>().stunned != true && Jacob.GetComponent<jacobAI>().notDetecting != true)
                 {
                     deathTimer = maxDeathTime;
-            murderinTime = true;
-            countingDown = false;
+                    murderinTime = true;
+                    countingDown = false;
                 }
             }
             
@@ -59,15 +59,16 @@ public class playerValues : MonoBehaviour
         if (Jacob.tag == "jacob")
         {
             Jacob.GetComponent<jacobAI>().notDetecting = false;
-            if (nearJacob != true && Jacob.GetComponent<jacobAI>().stunned != true && Jacob.GetComponent<jacobAI>().notDetecting != true)
+            if (nearJacob = true && Jacob.GetComponent<jacobAI>().stunned != true && Jacob.GetComponent<jacobAI>().notDetecting != true)
             {
                 deathSFXplayer.PlayOneShot(deathSound, 1);
             }
             if(Jacob.GetComponent<jacobAI>().stunned != true && Jacob.GetComponent<jacobAI>().notDetecting != true)
             {
                 countingDown = true;
-                nearJacob = true;
+                
             }
+            nearJacob = true;
         }
         
     }
