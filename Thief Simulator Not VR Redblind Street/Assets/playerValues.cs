@@ -40,18 +40,9 @@ public class playerValues : MonoBehaviour
             {
                 maxDeathTime -= 0.1f;
             }
-            else
-            {
-                if (Jacob.GetComponent<jacobAI>().stunned != true && Jacob.GetComponent<jacobAI>().notDetecting != true)
-                {
-                    
-                    murderinTime = true;
-                    
-                }
-                deathTimer = maxDeathTime;
-                countingDown = false;
-            }
-            
+            deathTimer = maxDeathTime;
+            murderinTime = true;
+            countingDown = false;
         }
     }
 
@@ -60,20 +51,11 @@ public class playerValues : MonoBehaviour
         
         if (Jacob.tag == "jacob")
         {
-            Jacob.GetComponent<jacobAI>().notDetecting = false;
-            Jacob.GetComponent<jacobAI>().patrolling = false;
-            if (nearJacob = true && Jacob.GetComponent<jacobAI>().stunned != true && Jacob.GetComponent<jacobAI>().notDetecting != true)
+            if(nearJacob != true)
             {
                 deathSFXplayer.PlayOneShot(deathSound, 1);
-                Jacob.gameObject.GetComponent<jacobAI>().loseInterestTimer = Jacob.gameObject.GetComponent<jacobAI>().loseInterestTimerMax;
-                Jacob.gameObject.GetComponent<jacobAI>().losingInterest = false;
             }
-            if(Jacob.GetComponent<jacobAI>().stunned != true && Jacob.GetComponent<jacobAI>().notDetecting != true)
-            {
-                countingDown = true;
-                Jacob.gameObject.GetComponent<jacobAI>().loseInterestTimer = Jacob.gameObject.GetComponent<jacobAI>().loseInterestTimerMax;
-                Jacob.gameObject.GetComponent<jacobAI>().losingInterest = false;
-            }
+            countingDown = true;
             nearJacob = true;
         }
         
@@ -82,19 +64,21 @@ public class playerValues : MonoBehaviour
     {
         if (Jacob.tag == "jacob")
         {
+            Jacob.GetComponent<NavMeshAgent>().isStopped = true;
             if (murderinTime)
             {
                 deathScreen.SetActive(true);
                 this.GetComponent<FirstPersonController>().enabled = false;
             }
         }
-        nearJacob = true;
+        
     }
 
     public void OnTriggerExit(Collider Jacob)
     {
         if (Jacob.tag == "jacob")
         {
+            Jacob.GetComponent<NavMeshAgent>().isStopped = false;
             nearJacob = false;
         }
     }

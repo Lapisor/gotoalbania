@@ -7,6 +7,7 @@ public class jacobAnimController : MonoBehaviour
 {
 
     public NavMeshAgent nav;
+    public Transform player;
 
     // Start is called before the first frame update
     void Start()
@@ -37,11 +38,13 @@ public class jacobAnimController : MonoBehaviour
     public void Stun()
     {
         nav.isStopped = true;
-        nav.gameObject.GetComponent<jacobAI>().stunned = false;
+        nav.gameObject.GetComponent<jacobAI>().stunned = true;
     }
     public void Unstun()
     {
         nav.isStopped = false;
-        nav.gameObject.GetComponent<jacobAI>().stunned = true;
+        nav.gameObject.GetComponent<jacobAI>().patrolling = false;
+        nav.gameObject.GetComponent<jacobAI>().stunned = false;
+        nav.SetDestination(player.position);
     }
 }

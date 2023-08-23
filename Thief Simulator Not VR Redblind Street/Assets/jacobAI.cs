@@ -27,11 +27,8 @@ public class jacobAI : MonoBehaviour
 
     private RaycastHit _mHitInfo;   // allocating memory for the raycasthit
     // to avoid Garbage
-    private bool _bHasDetectedEnnemy = false;
-    private bool _bHasDetectedEnnemyL1 = false;
-    private bool _bHasDetectedEnnemyL2 = false;
-    private bool _bHasDetectedEnnemyR1 = false;
-    private bool _bHasDetectedEnnemyR2 = false;
+    private bool _bHasDetectedEnnemy = false;   // tracking whether the player
+    // is detected to change color in gizmos
     public bool notDetecting;
 
     public float loseInterestTimer;
@@ -43,8 +40,6 @@ public class jacobAI : MonoBehaviour
     public bool doorSearching;
 
     public bool stunned;
-
-    public Vector3 adjustment;
 
     // Start is called before the first frame update
     void Start()
@@ -80,14 +75,13 @@ public class jacobAI : MonoBehaviour
         {
             goToNextPoint();
         }
-        if (losingInterest)
+        if (losingInterest && notDetecting)
         {
             loseInterestTimer -= 1 * Time.deltaTime;
         }
-        if(loseInterestTimer <= 0)
+        if(loseInterestTimer <= 0 && notDetecting)
         {
             patrolling = true;
-            this.GetComponent<NavMeshAgent>().speed *= 0.7f;
             losingInterest = false;
             loseInterestTimer = loseInterestTimerMax;
             this.GetComponent<NavMeshAgent>().isStopped = true;
@@ -97,11 +91,6 @@ public class jacobAI : MonoBehaviour
         if(this.GetComponent<NavMeshAgent>().velocity.x < 0.1 && this.GetComponent<NavMeshAgent>().velocity.z < 0.1)
         {
             doorSearching = true;
-        }
-
-        if(patrolling != true)
-        {
-            notDetecting = false;
         }
     }
 
@@ -155,24 +144,28 @@ public class jacobAI : MonoBehaviour
 
     void goToNextPoint()
     {
-        this.GetComponent<NavMeshAgent>().isStopped = false;
-        // Returns if no points have been set up
-        if (points.Length == 0)
+        if(stunned != true && notDetecting)
         {
-            return;
-        }
+            this.GetComponent<NavMeshAgent>().isStopped = false;
+            // Returns if no points have been set up
+            if (points.Length == 0)
+            {
+                return;
+            }
 
-        // Set the agent to go to the currently selected destination.
-        if (patrolling)
-        {
-            this.GetComponent<NavMeshAgent>().destination = points[destPoint].position;
+            // Set the agent to go to the currently selected destination.
+            if (patrolling)
+            {
+                this.GetComponent<NavMeshAgent>().destination = points[destPoint].position;
+            }
+            // Choose the next point in the array as the destination,
+            // cycling to the start if necessary.
+            if (patrolling)
+            {
+                destPoint = (destPoint + 1) % points.Length;
+            }
         }
-        // Choose the next point in the array as the destination,
-        // cycling to the start if necessary.
-        if (patrolling)
-        {
-            destPoint = (destPoint + 1) % points.Length;
-        }
+        
     }
 
     public void CheckForTargetInLineOfSight()
@@ -196,6 +189,7 @@ public class jacobAI : MonoBehaviour
                 // no player detected, insert your own logic
             }
         }
+        
     }
 
 

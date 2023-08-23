@@ -37,6 +37,8 @@ public class crowbarAttackScript : MonoBehaviour
             {
                 hit.transform.gameObject.GetComponentInChildren<Animator>().SetTrigger("Hit");
                 Debug.Log("Hit a Jacob thing");
+                hit.transform.gameObject.GetComponent<jacobAI>().patrolling = false;
+                hit.transform.gameObject.GetComponent<NavMeshAgent>().SetDestination(GetComponentInParent<crouchScript>().gameObject.transform.position);
             }
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
         }
