@@ -19,21 +19,38 @@ public class jacobAnimController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(nav.velocity.x < 1.5)
+        if(nav.velocity.x < 2.5)
         {
-            this.GetComponent<Animator>().SetBool("Running", false);
+            if (nav.velocity.z >= 2.5)
+            {
+                this.GetComponent<Animator>().SetBool("Running", true);
+            }
+            else
+            {
+                this.GetComponent<Animator>().SetBool("Running", false);
+            }
         }
-        if (nav.velocity.z < 1.5)
+        if (nav.velocity.z < 2.5)
         {
-            this.GetComponent<Animator>().SetBool("Running", false);
+            if (nav.velocity.x >= 2.5)
+            {
+                this.GetComponent<Animator>().SetBool("Running", true);
+            }
+            else
+            {
+                this.GetComponent<Animator>().SetBool("Running", false);
+            }
         }
-        if (nav.velocity.x >= 1.5)
+        if (nav.velocity.x < 1.5)
         {
-            this.GetComponent<Animator>().SetBool("Running", true);
-        }
-        if (nav.velocity.z >= 1.5)
-        {
-            this.GetComponent<Animator>().SetBool("Running", true);
+            if (nav.velocity.z >= 1.5)
+            {
+                this.GetComponent<Animator>().SetBool("Fast", true);
+            }
+            else
+            {
+                this.GetComponent<Animator>().SetBool("Fast", false);
+            }
         }
     }
     public void Stun()

@@ -38,6 +38,7 @@ public class crouchScript : MonoBehaviour
         {
             this.GetComponent<FirstPersonController>().m_WalkSpeed = regSpeed;
             this.GetComponent<FirstPersonController>().m_RunSpeed = regSpeed * 2;
+            this.GetComponent<CharacterController>().height *= 1.3f;
             this.GetComponent<CharacterController>().height = regSize;
             Jacob.mTargetDetectionDistance = regDetection;
         }

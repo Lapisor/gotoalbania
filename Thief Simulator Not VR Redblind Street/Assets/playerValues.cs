@@ -58,7 +58,10 @@ public class playerValues : MonoBehaviour
             countingDown = true;
             nearJacob = true;
         }
-        
+        if (Jacob.tag == "jacob extra")
+        {
+            Jacob.gameObject.GetComponentInParent<NavMeshAgent>().SetDestination(this.transform.position);
+        }
     }
     public void OnTriggerStay(Collider Jacob)
     {

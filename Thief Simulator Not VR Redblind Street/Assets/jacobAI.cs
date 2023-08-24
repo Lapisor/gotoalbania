@@ -27,8 +27,10 @@ public class jacobAI : MonoBehaviour
 
     private RaycastHit _mHitInfo;   // allocating memory for the raycasthit
     // to avoid Garbage
+    private RaycastHit wallHitInfo;
     private bool _bHasDetectedEnnemy = false;   // tracking whether the player
     // is detected to change color in gizmos
+    private bool wallCheck = false;
     public bool notDetecting;
 
     public float loseInterestTimer;
@@ -40,6 +42,9 @@ public class jacobAI : MonoBehaviour
     public bool doorSearching;
 
     public bool stunned;
+
+    public LayerMask layerMask;
+    public Transform wallCheckPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -71,7 +76,7 @@ public class jacobAI : MonoBehaviour
         {
             real = true;
         }
-        if (!this.GetComponent<NavMeshAgent>().pathPending && this.GetComponent<NavMeshAgent>().remainingDistance < 0.5f && patrolling)
+        if (!this.GetComponent<NavMeshAgent>().pathPending && this.GetComponent<NavMeshAgent>().remainingDistance < 0.5f && patrolling && notDetecting)
         {
             goToNextPoint();
         }
@@ -108,6 +113,8 @@ public class jacobAI : MonoBehaviour
         Gizmos.matrix = transform.localToWorldMatrix;
 
         Gizmos.DrawCube(new Vector3(0f, 0f, mTargetDetectionDistance / 2f), new Vector3(mRaycastRadius, mRaycastRadius, mTargetDetectionDistance));
+
+        Debug.DrawRay(wallCheckPoint.position, wallCheckPoint.TransformDirection(Vector3.forward) * 1000, Color.white);
     }
 
     void FixedUpdate()
@@ -180,12 +187,16 @@ public class jacobAI : MonoBehaviour
         {
             if (_mHitInfo.transform.gameObject.tag == "Player")
             {
-                loseInterestTimer = loseInterestTimerMax;
-                losingInterest = false;
-                notDetecting = false;
-                patrolling = false;
-                this.GetComponent<NavMeshAgent>().SetDestination(_mHitInfo.transform.position);
-                // insert fighting logic here
+                wallCheck = Physics.Raycast(wallCheckPoint.position, wallCheckPoint.forward, out wallHitInfo, Mathf.Infinity);
+                Debug.Log(wallHitInfo.transform.gameObject.name);
+                if (wallHitInfo.transform.gameObject.tag == "Player")
+                {
+                    loseInterestTimer = loseInterestTimerMax;
+                    losingInterest = false;
+                    notDetecting = false;
+                    patrolling = false;
+                    this.GetComponent<NavMeshAgent>().SetDestination(_mHitInfo.transform.position);
+                }
             }
             else
             {
