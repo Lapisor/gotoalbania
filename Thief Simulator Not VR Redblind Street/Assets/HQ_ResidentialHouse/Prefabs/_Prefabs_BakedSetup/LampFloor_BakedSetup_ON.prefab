@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 33000012800431820}
   - component: {fileID: 23000011446747128}
   - component: {fileID: 64000011205869924}
+  - component: {fileID: 169641024}
   m_Layer: 0
   m_Name: LampFloor_BakedSetup_ON
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 126
@@ -96,6 +97,21 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 31cd2b0ed81439c40b93399a032d7d30, type: 3}
+--- !u!114 &169641024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010415495696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 20
+  value: 40
+  name: Lamp
 --- !u!1 &1000010988845700
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,19 +155,19 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.8441175, b: 0.6102941, a: 1}
-  m_Intensity: 1.33
-  m_Range: 2.5
+  m_Intensity: 0.85
+  m_Range: 4.17
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
-    m_Resolution: 3
+    m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.049999997
+    m_NearPlane: 0.33
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -176,9 +192,9 @@ Light:
   m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967039
+    m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0.78
@@ -199,7 +215,7 @@ GameObject:
   - component: {fileID: 4000012161862872}
   - component: {fileID: 33000010410344702}
   - component: {fileID: 23000013980983046}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LampFloor_bulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}

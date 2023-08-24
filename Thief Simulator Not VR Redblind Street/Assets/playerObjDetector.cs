@@ -44,10 +44,10 @@ public class playerObjDetector : MonoBehaviour
                 selectedObject.gameObject.SetActive(false);
                 theText.gameObject.SetActive(false);
                 theUpdater.updateGoddammit();
-                if(Jacob.GetComponent<NavMeshAgent>().speed <= 8)
+                if(Jacob.GetComponent<NavMeshAgent>().speed <= 6)
                 {
-                    Jacob.GetComponent<NavMeshAgent>().speed += 0.002f;
-                    Jacob.GetComponent<NavMeshAgent>().acceleration += 0.002f;
+                    Jacob.GetComponent<NavMeshAgent>().speed += 0.001f;
+                    Jacob.GetComponent<NavMeshAgent>().acceleration += 0.001f;
                     Jacob.GetComponent<NavMeshAgent>().speed += (player.monies / 360000);
                     Jacob.GetComponent<NavMeshAgent>().acceleration += (player.monies / 362000);
                     Jacob.GetComponent<NavMeshAgent>().angularSpeed += 4f;

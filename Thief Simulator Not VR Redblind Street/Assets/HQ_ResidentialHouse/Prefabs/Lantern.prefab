@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 3392498}
   - component: {fileID: 2392242}
   - component: {fileID: 6546060}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Lantern_glass
   m_TagString: Glass
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 3312702}
   - component: {fileID: 2350604}
   - component: {fileID: 10895164}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Lantern_bulb
   m_TagString: Glass
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ Light:
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.06
+    m_NearPlane: 0.18
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -320,7 +320,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967039
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
