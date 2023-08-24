@@ -134,9 +134,14 @@ public class jacobAI : MonoBehaviour
                     this.GetComponent<AudioSource>().PlayOneShot(clip3, 0.3f);
                 }
             }
-            if(patrolling != true && notDetecting)
+            if(notDetecting)
             {
                 losingInterest = true;
+            }
+            if (patrolling)
+            {
+                loseInterestTimer = loseInterestTimerMax;
+                losingInterest = false;
             }
         }
         

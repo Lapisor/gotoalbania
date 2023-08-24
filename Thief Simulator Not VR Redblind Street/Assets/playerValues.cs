@@ -65,7 +65,7 @@ public class playerValues : MonoBehaviour
         if (Jacob.tag == "jacob")
         {
             Jacob.GetComponent<NavMeshAgent>().isStopped = true;
-            if (murderinTime)
+            if (murderinTime && Jacob.GetComponent<jacobAI>().stunned != true)
             {
                 deathScreen.SetActive(true);
                 this.GetComponent<FirstPersonController>().enabled = false;

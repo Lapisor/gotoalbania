@@ -12,6 +12,12 @@ public class crowbarAttackScript : MonoBehaviour
 
     public LayerMask layerMask;
 
+    public bool coolindownin;
+    public float cooldownTimer;
+    public float cooldown;
+
+    public GameObject staminaBar;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +27,32 @@ public class crowbarAttackScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && coolindownin != true)
         {
+            cooldownTimer = cooldown;
             this.GetComponent<Animator>().SetTrigger("Attack");
+            coolindownin = true;
+        }
+        if (coolindownin)
+        {
+            staminaBar.SetActive(true);
+        }
+        else
+        {
+            staminaBar.SetActive(false);
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (coolindownin)
+        {
+            cooldownTimer -= 1 * Time.deltaTime;
+        }
+        if(cooldownTimer <= 0)
+        {
+            coolindownin = false;
+            cooldownTimer = cooldown;
         }
     }
 
