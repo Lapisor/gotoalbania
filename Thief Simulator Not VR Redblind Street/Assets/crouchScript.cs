@@ -29,15 +29,13 @@ public class crouchScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftControl))
         {
-            this.GetComponent<FirstPersonController>().m_WalkSpeed = 1.5f * ((2000 - this.GetComponent<playerValues>().weightCarried) / 3000);
-            this.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 3 * ((2000 - this.GetComponent<playerValues>().weightCarried) / 3000);
+            isCrouching = true;
             this.GetComponent<CharacterController>().height = crouchedSize;
             Jacob.mTargetDetectionDistance = crouchedDetection;
         }
         if (Input.GetKeyUp(KeyCode.LeftControl))
         {
-            this.GetComponent<FirstPersonController>().m_WalkSpeed = 3 * ((2000 - this.GetComponent<playerValues>().weightCarried) / 3000);
-            this.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 6 * ((2000 - this.GetComponent<playerValues>().weightCarried) / 3000);
+            isCrouching = false;
             this.GetComponent<CharacterController>().height *= 1.3f;
             this.GetComponent<CharacterController>().height = regSize;
             Jacob.mTargetDetectionDistance = regDetection;

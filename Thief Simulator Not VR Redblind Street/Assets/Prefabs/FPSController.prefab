@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 2687597067719263439}
   - component: {fileID: 2687597068978350748}
   - component: {fileID: 2687597067719263436}
+  - component: {fileID: 1214496665}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: Player
@@ -562,6 +563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monies: 0
   weightCarried: 0
+  holdingWorth: 0
   Jacob: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 5a8f64597db2a1247a9165ea99edceb9, type: 3}
   deathScreen: {fileID: 0}
@@ -591,6 +593,20 @@ MonoBehaviour:
   Jacob: {fileID: 0}
   regDetection: 14.95
   crouchedDetection: 10
+--- !u!114 &1214496665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2687597067719263437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 553a6f7a145400848b242932f3a77789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPaused: 0
+  pauseScreen: {fileID: 0}
 --- !u!1 &2687597067972373326
 GameObject:
   m_ObjectHideFlags: 0
