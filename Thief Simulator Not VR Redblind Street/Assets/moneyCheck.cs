@@ -22,7 +22,7 @@ public class moneyCheck : MonoBehaviour
         {
             Trophies.Unlock(206278);
         }
-        GameJolt.API.Scores.Add(Mathf.RoundToInt(player.monies), stringyThingy, 845072);
+        GameJolt.API.Scores.Add(Mathf.RoundToInt(player.monies), stringyThingy, 845426);
     }
 
     // Update is called once per frame

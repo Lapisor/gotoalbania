@@ -17058,7 +17058,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1067667124
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34113,6 +34113,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DiningStealables
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630577697572711979, guid: 21342e06fb306ec49b6600fcf16c67bd,
+        type: 3}
+      propertyPath: mass
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 3381303329283623042, guid: 21342e06fb306ec49b6600fcf16c67bd,
         type: 3}
