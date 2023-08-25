@@ -8,6 +8,7 @@ public class valueUpdater : MonoBehaviour
 
     public playerValues player;
     public TextMeshProUGUI theText;
+    public TextMeshProUGUI theWeightText;
 
     // Start is called before the first frame update
     void Start()
@@ -24,5 +25,6 @@ public class valueUpdater : MonoBehaviour
     public void updateGoddammit()
     {
         theText.text = "£" + player.monies;
+        theWeightText.text = player.weightCarried + "/2000";
     }
 }

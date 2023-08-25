@@ -10,6 +10,7 @@ public class playerValues : MonoBehaviour
 
     public float monies;
     public float weightCarried;
+    public float holdingWorth;
     public Collider Jacob;
     public AudioClip deathSound;
     public GameObject deathScreen;

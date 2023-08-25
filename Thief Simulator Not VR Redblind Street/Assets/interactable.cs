@@ -22,7 +22,14 @@ public class interactable : MonoBehaviour
 
     public void contactInteractable()
     {
-        GetComponentInChildren<putOutFire>().interactionFunction();
+        if (interactObject.GetComponent<putOutFire>() != null)
+        {
+            GetComponentInChildren<putOutFire>().interactionFunction();
+        }
+        if (interactObject.GetComponent<depositItems>() != null)
+        {
+            GetComponentInChildren<depositItems>().interactionFunction();
+        }
     }
     public void contactSecondaryInteractable()
     {

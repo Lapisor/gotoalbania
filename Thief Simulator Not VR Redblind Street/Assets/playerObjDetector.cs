@@ -28,6 +28,16 @@ public class playerObjDetector : MonoBehaviour
     void Update()
     {
         Physics.IgnoreLayerCollision(1, 4);
+        if (player.weightCarried < 1650)
+        {
+            player.gameObject.GetComponent<FirstPersonController>().m_WalkSpeed = 3 * ((2000 - player.weightCarried) / 3000);
+            player.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 6 * ((2000 - player.weightCarried) / 3000);
+        }
+        else
+        {
+            player.gameObject.GetComponent<FirstPersonController>().m_WalkSpeed = 0.4f;
+            player.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 0.8f;
+        }
     }
 
     public void OnTriggerStay(Collider other)
@@ -39,18 +49,39 @@ public class playerObjDetector : MonoBehaviour
             theText.text = "'E' to pick up " + other.GetComponent<StealableObject>().name;
             if (Input.GetKey(KeyCode.E))    
             {
-                player.monies += selectedObject.GetComponent<StealableObject>().value;
-                player.weightCarried += other.GetComponent<StealableObject>().mass;
-                selectedObject.gameObject.SetActive(false);
-                theText.gameObject.SetActive(false);
-                theUpdater.updateGoddammit();
-                if(Jacob.GetComponent<NavMeshAgent>().speed <= 6)
+                if(player.weightCarried + selectedObject.GetComponent<StealableObject>().mass <= 2000)
                 {
-                    Jacob.GetComponent<NavMeshAgent>().speed += 0.001f;
-                    Jacob.GetComponent<NavMeshAgent>().acceleration += 0.001f;
-                    Jacob.GetComponent<NavMeshAgent>().speed += (player.monies / 360000);
-                    Jacob.GetComponent<NavMeshAgent>().acceleration += (player.monies / 362000);
-                    Jacob.GetComponent<NavMeshAgent>().angularSpeed += 4f;
+                    player.holdingWorth += selectedObject.GetComponent<StealableObject>().value;
+                    player.weightCarried += selectedObject.GetComponent<StealableObject>().mass;
+                    selectedObject.gameObject.SetActive(false);
+                    theText.gameObject.SetActive(false);
+                    theUpdater.updateGoddammit();
+                    if (player.gameObject.GetComponent<FirstPersonController>().m_WalkSpeed < 1)
+                    {
+
+                    }
+                    else
+                    {
+                        if(player.weightCarried < 1650)
+                        {
+                            player.gameObject.GetComponent<FirstPersonController>().m_WalkSpeed = 3 * ((2000 - player.weightCarried) / 3000);
+                            player.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 6 * ((2000 - player.weightCarried) / 3000);
+                        }
+                        else
+                        {
+                            player.gameObject.GetComponent<FirstPersonController>().m_WalkSpeed = 0.4f;
+                            player.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 0.8f;
+                        }
+                        
+                    }
+                    if (Jacob.GetComponent<NavMeshAgent>().speed <= 6)
+                    {
+                        Jacob.GetComponent<NavMeshAgent>().speed += 0.001f;
+                        Jacob.GetComponent<NavMeshAgent>().acceleration += 0.001f;
+                        Jacob.GetComponent<NavMeshAgent>().speed += (player.monies / 360000);
+                        Jacob.GetComponent<NavMeshAgent>().acceleration += (player.monies / 362000);
+                        Jacob.GetComponent<NavMeshAgent>().angularSpeed += 4f;
+                    }
                 }
             }
         }
