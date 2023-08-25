@@ -1,5 +1,485 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &2123586027469644841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282545821075274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 500
+  value: 200
+  name: Box of Nuts
+--- !u!114 &7770140798672367872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282546125825127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &7515280010299744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282546235948839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &5509467403252300354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282546455424004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &1740036687820444933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282546574421393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &2821961370304031500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282546628196111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &121231729644825555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282546672223184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &968665349873070614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282546853862200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &1228734679510343480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282546947976049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &5313653486392328658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282547011033026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &621070362737323015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282547537111788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 200
+  value: 250
+  name: Small Garage Box
+--- !u!114 &5279188944789441145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282547573837000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &2097720205655807505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282547778478604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 200
+  value: 250
+  name: Small Garage Box
+--- !u!114 &1212548195798786037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282547857456067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &2300852791284481455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282548140992705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &3215115084775727071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282548189237645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &3641839591038774998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282548248232710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &4202848384886324526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282548427326754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 500
+  value: 0
+  name: Garage Box
+--- !u!114 &4695335669407518415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282548435276016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &4387185201389811167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282548768011712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 200
+  value: 250
+  name: Small Garage Box
+--- !u!114 &644392904734572719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282548768154652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 200
+  value: 250
+  name: Small Garage Box
+--- !u!114 &7454825592364138935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282548768219958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &8517983485180587269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282549003086880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &3960751982688831622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282549043881083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &3059466785772038077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282549081029616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &589056536707614529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282549187093764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &8465486686552524071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282549265854683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &1337869811365150998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282549407038957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &389269950513486167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282549508501933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &1296406492540535299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282549514926165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &7638081278751383492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282549578897670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 400
+  value: 500
+  name: Garage Box
+--- !u!114 &4240641785067574020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167282549583409084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5eefd604a75c44298d0f88d1ea8269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 2000
+  value: 10000
+  name: Tub of Gold
 --- !u!1 &4048170627385680800
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +491,7 @@ GameObject:
   - component: {fileID: 901111145025102332}
   m_Layer: 0
   m_Name: GarageStealables
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,6 +507,7 @@ Transform:
   m_LocalPosition: {x: -7.021817, y: 1.7297158, z: 0.8528632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2170175928374116704}
   - {fileID: 2170175933710657010}
   - {fileID: 2170175929204168634}
   - {fileID: 2170175927839362196}
@@ -35,13 +516,9 @@ Transform:
   - {fileID: 2170175933127595862}
   - {fileID: 2170175933541460068}
   - {fileID: 2170175928956303094}
-  - {fileID: 2170175928374116704}
-  - {fileID: 2170175930652757544}
   - {fileID: 2170175929799208863}
   - {fileID: 2170175929127801176}
   - {fileID: 2170175929747423796}
-  - {fileID: 2170175930639751281}
-  - {fileID: 2170175931236493288}
   - {fileID: 2170175927361494559}
   - {fileID: 2170175932890099282}
   - {fileID: 2170175933045116862}
@@ -61,7 +538,6 @@ Transform:
   - {fileID: 2170175928963886244}
   - {fileID: 2170175928046731382}
   - {fileID: 2170175928756223551}
-  - {fileID: 2170175930855737975}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -72,9 +548,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 901111145025102332}
     m_Modifications:
+    - target: {fileID: 1000010263091072, guid: 3e6363918b640f343935915737ada038, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010188174124, guid: 3e6363918b640f343935915737ada038, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4000010188174124, guid: 3e6363918b640f343935915737ada038, type: 3}
       propertyPath: m_LocalPosition.x
@@ -112,6 +592,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2166291342010489672}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2167282547573837000 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010263091072, guid: 3e6363918b640f343935915737ada038,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291342010489672}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291342096385574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123,9 +609,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxSmallB (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011371536954, guid: 872f0d536df2a9149a1981b7a51d0ce7, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010303972308, guid: 872f0d536df2a9149a1981b7a51d0ce7, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000010303972308, guid: 872f0d536df2a9149a1981b7a51d0ce7, type: 3}
       propertyPath: m_LocalScale.x
@@ -175,6 +665,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2166291342096385574}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2167282548768154652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011371536954, guid: 872f0d536df2a9149a1981b7a51d0ce7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291342096385574}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291342277389379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -186,9 +682,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxA (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010263091072, guid: 3e6363918b640f343935915737ada038, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010188174124, guid: 3e6363918b640f343935915737ada038, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4000010188174124, guid: 3e6363918b640f343935915737ada038, type: 3}
       propertyPath: m_LocalScale.x
@@ -232,6 +732,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e6363918b640f343935915737ada038, type: 3}
+--- !u!1 &2167282547857456067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010263091072, guid: 3e6363918b640f343935915737ada038,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291342277389379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175933262045039 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010188174124, guid: 3e6363918b640f343935915737ada038,
@@ -243,39 +749,43 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 901111145025102332}
+    m_TransformParent: {fileID: 2170175928374116704}
     m_Modifications:
+    - target: {fileID: 1000010020068948, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.08181715
+      value: 0.094288334
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.8057159
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.9518632
+      value: 0.5631748
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9957735
+      value: -0.14461683
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000021763322
+      value: 8.482193e-10
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.09184312
+      value: 0.98948777
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000002007295
+      value: -0.000000021839229
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -283,54 +793,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
---- !u!4 &2170175930652757544 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2166291342287078656}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291342308479833
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 901111145025102332}
+    m_TransformParent: {fileID: 2170175929127801176}
     m_Modifications:
     - target: {fileID: 1000010020068948, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_Name
       value: GarageBoxCapA (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010020068948, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.8822174
+      value: -0.13759995
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.78471583
+      value: 0.34999996
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.9212632
+      value: 0.034600005
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.98201925
+      value: 0.9820193
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000020345967
+      value: -0.0000000011167476
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.18878089
+      value: -0.1887809
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000079820754
+      value: 0.000000012108015
       objectReference: {fileID: 0}
     - target: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -338,12 +846,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab4f8350cacea0446a40155b8432c7f2, type: 3}
---- !u!4 &2170175930639751281 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4000011888069416, guid: ab4f8350cacea0446a40155b8432c7f2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2166291342308479833}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291342313497013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -355,9 +857,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxC (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_LocalScale.x
@@ -401,6 +907,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c82cadad109a86144b924bec15c7174c, type: 3}
+--- !u!1 &2167282546947976049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291342313497013}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175933407674359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c,
@@ -418,9 +930,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxC (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_LocalScale.x
@@ -464,62 +980,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c82cadad109a86144b924bec15c7174c, type: 3}
+--- !u!1 &2167282547011033026 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291342376459526}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175933462233924 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c,
     type: 3}
   m_PrefabInstance: {fileID: 2166291342376459526}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &2166291342487702607
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 901111145025102332}
-    m_Modifications:
-    - target: {fileID: 4000011729339960, guid: 7179a3d34a54c5f409080f73dea79424, type: 3}
-      propertyPath: m_RootOrder
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011729339960, guid: 7179a3d34a54c5f409080f73dea79424, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.09881735
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011729339960, guid: 7179a3d34a54c5f409080f73dea79424, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.80571574
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011729339960, guid: 7179a3d34a54c5f409080f73dea79424, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.9688632
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011729339960, guid: 7179a3d34a54c5f409080f73dea79424, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.84679717
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011729339960, guid: 7179a3d34a54c5f409080f73dea79424, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011729339960, guid: 7179a3d34a54c5f409080f73dea79424, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5319159
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011729339960, guid: 7179a3d34a54c5f409080f73dea79424, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011729339960, guid: 7179a3d34a54c5f409080f73dea79424, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 64.27
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7179a3d34a54c5f409080f73dea79424, type: 3}
---- !u!4 &2170175930855737975 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4000011729339960, guid: 7179a3d34a54c5f409080f73dea79424,
-    type: 3}
-  m_PrefabInstance: {fileID: 2166291342487702607}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291342560870209
 PrefabInstance:
@@ -532,9 +1003,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxA (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010263091072, guid: 3e6363918b640f343935915737ada038, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010188174124, guid: 3e6363918b640f343935915737ada038, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4000010188174124, guid: 3e6363918b640f343935915737ada038, type: 3}
       propertyPath: m_LocalScale.x
@@ -578,6 +1053,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e6363918b640f343935915737ada038, type: 3}
+--- !u!1 &2167282548140992705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010263091072, guid: 3e6363918b640f343935915737ada038,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291342560870209}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175933007596653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010188174124, guid: 3e6363918b640f343935915737ada038,
@@ -595,9 +1076,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxC (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_LocalScale.x
@@ -647,6 +1132,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2166291342578682132}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2167282546672223184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291342578682132}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291342687520418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -658,9 +1149,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxSmallA (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011862946658, guid: 402f878330c646b4eaff297e2b05de8c, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012626331348, guid: 402f878330c646b4eaff297e2b05de8c, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 4000012626331348, guid: 402f878330c646b4eaff297e2b05de8c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -702,6 +1197,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2166291342687520418}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2167282548768011712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011862946658, guid: 402f878330c646b4eaff297e2b05de8c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291342687520418}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291342729831101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -709,9 +1210,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 901111145025102332}
     m_Modifications:
+    - target: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -747,6 +1252,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
+--- !u!1 &2167282548189237645 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291342729831101}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175927361494559 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0,
@@ -760,9 +1271,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 901111145025102332}
     m_Modifications:
+    - target: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -800,6 +1315,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2166291342756778492}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2167282546853862200 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291342756778492}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291342894828934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -807,9 +1328,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 901111145025102332}
     m_Modifications:
+    - target: {fileID: 1000011371536954, guid: 872f0d536df2a9149a1981b7a51d0ce7, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010303972308, guid: 872f0d536df2a9149a1981b7a51d0ce7, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010303972308, guid: 872f0d536df2a9149a1981b7a51d0ce7, type: 3}
       propertyPath: m_LocalScale.x
@@ -851,8 +1376,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 88.61201
       objectReference: {fileID: 0}
+    - target: {fileID: 23000013148937878, guid: 872f0d536df2a9149a1981b7a51d0ce7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c9eb8d130da819ed1849292fbaf8d147, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 872f0d536df2a9149a1981b7a51d0ce7, type: 3}
+--- !u!1 &2167282549583409084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011371536954, guid: 872f0d536df2a9149a1981b7a51d0ce7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291342894828934}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175932890099282 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010303972308, guid: 872f0d536df2a9149a1981b7a51d0ce7,
@@ -870,9 +1406,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxB (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_LocalScale.x
@@ -922,6 +1462,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2166291342939795510}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2167282548248232710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291342939795510}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291343014209365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -933,9 +1479,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxC (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_LocalScale.x
@@ -979,6 +1529,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c82cadad109a86144b924bec15c7174c, type: 3}
+--- !u!1 &2167282546574421393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343014209365}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175932757293335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c,
@@ -996,9 +1552,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxB (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_LocalScale.x
@@ -1042,6 +1602,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
+--- !u!1 &2167282548435276016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343019615168}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175927682998114 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0,
@@ -1059,9 +1625,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxC (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_LocalScale.x
@@ -1105,6 +1675,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c82cadad109a86144b924bec15c7174c, type: 3}
+--- !u!1 &2167282546628196111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343067332043}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175932819317641 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c,
@@ -1118,9 +1694,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 901111145025102332}
     m_Modifications:
+    - target: {fileID: 1000010668257964, guid: e5bd7db068b511e46bd2f1b45d53ee82, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011791977320, guid: e5bd7db068b511e46bd2f1b45d53ee82, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4000011791977320, guid: e5bd7db068b511e46bd2f1b45d53ee82, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1152,6 +1732,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5bd7db068b511e46bd2f1b45d53ee82, type: 3}
+--- !u!1 &2167282549081029616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010668257964, guid: e5bd7db068b511e46bd2f1b45d53ee82,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343096645980}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175929747423796 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011791977320, guid: e5bd7db068b511e46bd2f1b45d53ee82,
@@ -1169,9 +1755,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxC (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_LocalScale.x
@@ -1215,6 +1805,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c82cadad109a86144b924bec15c7174c, type: 3}
+--- !u!1 &2167282546125825127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343102357155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175932585390305 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c,
@@ -1232,9 +1828,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxC (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4000010287193666, guid: c82cadad109a86144b924bec15c7174c, type: 3}
       propertyPath: m_LocalScale.x
@@ -1284,6 +1884,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2166291343216309731}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2167282546235948839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000014149405380, guid: c82cadad109a86144b924bec15c7174c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343216309731}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291343224655878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1295,9 +1901,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxB (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_LocalScale.x
@@ -1347,6 +1957,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2166291343224655878}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2167282548768219958 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343224655878}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291343359153563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1354,9 +1970,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 901111145025102332}
     m_Modifications:
+    - target: {fileID: 1000010751813750, guid: 81df74c822fd896418f9c65fba40a02a, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011543509508, guid: 81df74c822fd896418f9c65fba40a02a, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000011543509508, guid: 81df74c822fd896418f9c65fba40a02a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1392,6 +2012,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81df74c822fd896418f9c65fba40a02a, type: 3}
+--- !u!1 &2167282549407038957 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010751813750, guid: 81df74c822fd896418f9c65fba40a02a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343359153563}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175929799208863 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011543509508, guid: 81df74c822fd896418f9c65fba40a02a,
@@ -1409,9 +2035,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxA (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010263091072, guid: 3e6363918b640f343935915737ada038, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010188174124, guid: 3e6363918b640f343935915737ada038, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 4000010188174124, guid: 3e6363918b640f343935915737ada038, type: 3}
       propertyPath: m_LocalScale.x
@@ -1461,16 +2091,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2166291343439805344}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2167282549003086880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010263091072, guid: 3e6363918b640f343935915737ada038,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343439805344}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291343473052528
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 901111145025102332}
+    m_TransformParent: {fileID: 2170175927361494559}
     m_Modifications:
+    - target: {fileID: 1000011955244626, guid: e748fe8e49b5085418259074b9446cd8, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011469925528, guid: e748fe8e49b5085418259074b9446cd8, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011469925528, guid: e748fe8e49b5085418259074b9446cd8, type: 3}
       propertyPath: m_LocalScale.x
@@ -1478,31 +2118,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011469925528, guid: e748fe8e49b5085418259074b9446cd8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.0700173
+      value: -1.0021031
       objectReference: {fileID: 0}
     - target: {fileID: 4000011469925528, guid: e748fe8e49b5085418259074b9446cd8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4603158
+      value: -1.2636
       objectReference: {fileID: 0}
     - target: {fileID: 4000011469925528, guid: e748fe8e49b5085418259074b9446cd8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.6958632
+      value: 0.16479005
       objectReference: {fileID: 0}
     - target: {fileID: 4000011469925528, guid: e748fe8e49b5085418259074b9446cd8, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.64157087
+      value: 0.62126344
       objectReference: {fileID: 0}
     - target: {fileID: 4000011469925528, guid: e748fe8e49b5085418259074b9446cd8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5097334
+      value: 0.49359912
       objectReference: {fileID: 0}
     - target: {fileID: 4000011469925528, guid: e748fe8e49b5085418259074b9446cd8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.44879553
+      value: -0.47651052
       objectReference: {fileID: 0}
     - target: {fileID: 4000011469925528, guid: e748fe8e49b5085418259074b9446cd8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.35656878
+      value: 0.37858862
       objectReference: {fileID: 0}
     - target: {fileID: 4000011469925528, guid: e748fe8e49b5085418259074b9446cd8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1518,9 +2158,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e748fe8e49b5085418259074b9446cd8, type: 3}
---- !u!4 &2170175931236493288 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4000011469925528, guid: e748fe8e49b5085418259074b9446cd8,
+--- !u!1 &2167282548427326754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011955244626, guid: e748fe8e49b5085418259074b9446cd8,
     type: 3}
   m_PrefabInstance: {fileID: 2166291343473052528}
   m_PrefabAsset: {fileID: 0}
@@ -1535,9 +2175,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxB (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_LocalScale.x
@@ -1581,6 +2225,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
+--- !u!1 &2167282549043881083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343485867851}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175929222736873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0,
@@ -1594,9 +2244,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 901111145025102332}
     m_Modifications:
+    - target: {fileID: 1000013344811134, guid: cef5ce18750119246a599359794ec97e, type: 3}
+      propertyPath: m_Name
+      value: Bolts
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013344811134, guid: cef5ce18750119246a599359794ec97e, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000014199565908, guid: cef5ce18750119246a599359794ec97e, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000014199565908, guid: cef5ce18750119246a599359794ec97e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1632,6 +2290,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cef5ce18750119246a599359794ec97e, type: 3}
+--- !u!1 &2167282545821075274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013344811134, guid: cef5ce18750119246a599359794ec97e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343605886772}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175928374116704 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000014199565908, guid: cef5ce18750119246a599359794ec97e,
@@ -1649,9 +2313,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxA (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010263091072, guid: 3e6363918b640f343935915737ada038, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010188174124, guid: 3e6363918b640f343935915737ada038, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4000010188174124, guid: 3e6363918b640f343935915737ada038, type: 3}
       propertyPath: m_LocalScale.x
@@ -1695,6 +2363,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e6363918b640f343935915737ada038, type: 3}
+--- !u!1 &2167282549187093764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010263091072, guid: 3e6363918b640f343935915737ada038,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343623844484}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175931932393896 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010188174124, guid: 3e6363918b640f343935915737ada038,
@@ -1712,9 +2386,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxA (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010263091072, guid: 3e6363918b640f343935915737ada038, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010188174124, guid: 3e6363918b640f343935915737ada038, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4000010188174124, guid: 3e6363918b640f343935915737ada038, type: 3}
       propertyPath: m_LocalScale.x
@@ -1764,6 +2442,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2166291343685723995}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2167282549265854683 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010263091072, guid: 3e6363918b640f343935915737ada038,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343685723995}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291343739131908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1771,9 +2455,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 901111145025102332}
     m_Modifications:
+    - target: {fileID: 1000011769410280, guid: 821c30c1c0939fc4085d1561c528b987, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012666679026, guid: 821c30c1c0939fc4085d1561c528b987, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4000012666679026, guid: 821c30c1c0939fc4085d1561c528b987, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1809,6 +2497,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 821c30c1c0939fc4085d1561c528b987, type: 3}
+--- !u!1 &2167282547537111788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011769410280, guid: 821c30c1c0939fc4085d1561c528b987,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343739131908}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175928956303094 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000012666679026, guid: 821c30c1c0939fc4085d1561c528b987,
@@ -1822,9 +2516,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 901111145025102332}
     m_Modifications:
+    - target: {fileID: 1000012985208240, guid: adf3a92bf6b1db345b6fec60fe121d0e, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012638105836, guid: adf3a92bf6b1db345b6fec60fe121d0e, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4000012638105836, guid: adf3a92bf6b1db345b6fec60fe121d0e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1862,6 +2560,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2166291343874204084}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2167282546455424004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000012985208240, guid: adf3a92bf6b1db345b6fec60fe121d0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343874204084}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291343945617774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1869,9 +2573,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 901111145025102332}
     m_Modifications:
+    - target: {fileID: 1000011862946658, guid: 402f878330c646b4eaff297e2b05de8c, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012626331348, guid: 402f878330c646b4eaff297e2b05de8c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4000012626331348, guid: 402f878330c646b4eaff297e2b05de8c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1909,6 +2617,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2166291343945617774}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2167282547778478604 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011862946658, guid: 402f878330c646b4eaff297e2b05de8c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291343945617774}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291344020924982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1920,9 +2634,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxB (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_LocalScale.x
@@ -1966,6 +2684,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
+--- !u!1 &2167282549578897670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291344020924982}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2170175928683517588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0,
@@ -1983,9 +2707,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxB (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2027,6 +2755,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2166291344089025381}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2167282549514926165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291344089025381}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2166291344090727069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2038,9 +2772,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GarageBoxB (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
+      propertyPath: m_TagString
+      value: object
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0, type: 3}
       propertyPath: m_LocalScale.x
@@ -2087,6 +2825,12 @@ PrefabInstance:
 --- !u!4 &2170175928756223551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2166291344090727069}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2167282549508501933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010251727664, guid: 38f7365d0a12ac84fb6ded1e618aa3c0,
     type: 3}
   m_PrefabInstance: {fileID: 2166291344090727069}
   m_PrefabAsset: {fileID: 0}
