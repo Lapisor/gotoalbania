@@ -28,31 +28,49 @@ public class playerObjDetector : MonoBehaviour
     void Update()
     {
         Physics.IgnoreLayerCollision(1, 4);
-        if(this.GetComponentInParent<crouchScript>().isCrouching != true)
+        if (this.GetComponentInParent<crouchScript>().isCrouching != true)
         {
-            if (player.weightCarried < 1650)
+            if (player.weightCarried < 1000)
             {
-                player.gameObject.GetComponent<FirstPersonController>().m_WalkSpeed = 3 * ((2000 - player.weightCarried) / 3000);
-                player.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 6 * ((2000 - player.weightCarried) / 3000);
+                player.gameObject.GetComponent<FirstPersonController>().m_WalkSpeed = 2 * ((2000 - player.weightCarried) / 3000);
+                player.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 5 * ((2000 - player.weightCarried) / 3000);
             }
             else
             {
-                player.gameObject.GetComponent<FirstPersonController>().m_WalkSpeed = 0.4f;
-                player.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 0.8f;
+                if (player.weightCarried < 1650 && player.weightCarried >= 1000)
+                {
+                    player.gameObject.GetComponent<FirstPersonController>().m_WalkSpeed = 3 * ((2000 - player.weightCarried) / 3000);
+                    player.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 6 * ((2000 - player.weightCarried) / 3000);
+                }
+                else
+                {
+                    player.gameObject.GetComponent<FirstPersonController>().m_WalkSpeed = 0.4f;
+                    player.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 0.8f;
+                }
             }
+
         }
         else
         {
-            if (player.weightCarried < 1650)
+            if (player.weightCarried < 1000)
             {
-                player.gameObject.GetComponent<FirstPersonController>().m_WalkSpeed = 1.5f * ((2000 - player.weightCarried) / 3000);
-                player.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 3 * ((2000 - player.weightCarried) / 3000);
+                player.gameObject.GetComponent<FirstPersonController>().m_WalkSpeed = 1 * ((2000 - player.weightCarried) / 3000);
+                player.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 2.5f * ((2000 - player.weightCarried) / 3000);
             }
             else
             {
-                player.gameObject.GetComponent<FirstPersonController>().m_WalkSpeed = 0.2f;
-                player.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 0.4f;
+                if (player.weightCarried < 1650)
+                {
+                    player.gameObject.GetComponent<FirstPersonController>().m_WalkSpeed = 1.5f * ((2000 - player.weightCarried) / 3000);
+                    player.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 3 * ((2000 - player.weightCarried) / 3000);
+                }
+                else
+                {
+                    player.gameObject.GetComponent<FirstPersonController>().m_WalkSpeed = 0.2f;
+                    player.gameObject.GetComponent<FirstPersonController>().m_RunSpeed = 0.4f;
+                }
             }
+
         }
     }
 

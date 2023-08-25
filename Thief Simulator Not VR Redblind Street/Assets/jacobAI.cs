@@ -37,6 +37,8 @@ public class jacobAI : MonoBehaviour
     public float loseInterestTimerMax = 4f;
 
     public bool losingInterest;
+    public bool losingInterestSquared;
+    public float loseInterestSquaredTimer;
 
     public GameObject door;
     public bool doorSearching;
@@ -59,6 +61,7 @@ public class jacobAI : MonoBehaviour
             goToNextPoint();
         }
         loseInterestTimer = loseInterestTimerMax;
+        loseInterestSquaredTimer = 0;
     }
 
     // Update is called once per frame
@@ -84,10 +87,16 @@ public class jacobAI : MonoBehaviour
         {
             loseInterestTimer -= 1 * Time.deltaTime;
         }
-        if(loseInterestTimer <= 0 && notDetecting)
+        
+        if (losingInterestSquared && notDetecting)
+        {
+            loseInterestSquaredTimer += 1 * Time.deltaTime;
+        }
+        if (loseInterestTimer <= 0 && notDetecting)
         {
             patrolling = true;
             losingInterest = false;
+            losingInterestSquared = true;
             loseInterestTimer = loseInterestTimerMax;
             this.GetComponent<NavMeshAgent>().isStopped = true;
             goToNextPoint();
@@ -149,6 +158,12 @@ public class jacobAI : MonoBehaviour
             {
                 loseInterestTimer = loseInterestTimerMax;
                 losingInterest = false;
+                losingInterestSquared = true;
+                if(this.GetComponent<NavMeshAgent>().speed > 1.2)
+                {
+                    this.GetComponent<NavMeshAgent>().speed -= (loseInterestSquaredTimer / 2000);
+                    this.GetComponent<NavMeshAgent>().acceleration -= (loseInterestSquaredTimer / 2000);
+                }
             }
         }
         
@@ -192,6 +207,7 @@ public class jacobAI : MonoBehaviour
                 if (wallHitInfo.transform.gameObject.tag == "Player")
                 {
                     loseInterestTimer = loseInterestTimerMax;
+                    loseInterestSquaredTimer = 0;
                     losingInterest = false;
                     notDetecting = false;
                     patrolling = false;
