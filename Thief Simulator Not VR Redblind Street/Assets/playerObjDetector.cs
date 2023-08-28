@@ -5,6 +5,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.AI;
 using UnityStandardAssets.Characters.FirstPerson;
+using GameJolt.API;
 
 public class playerObjDetector : MonoBehaviour
 {
@@ -85,6 +86,7 @@ public class playerObjDetector : MonoBehaviour
             {
                 if(player.weightCarried + selectedObject.GetComponent<StealableObject>().mass <= 2000)
                 {
+                    Trophies.Unlock(selectedObject.GetComponent<StealableObject>().trophyUnlocked);
                     player.holdingWorth += selectedObject.GetComponent<StealableObject>().value;
                     player.weightCarried += selectedObject.GetComponent<StealableObject>().mass;
                     selectedObject.gameObject.SetActive(false);

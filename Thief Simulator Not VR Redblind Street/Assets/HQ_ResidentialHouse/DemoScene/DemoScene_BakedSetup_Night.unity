@@ -312,6 +312,7 @@ MonoBehaviour:
   mass: 1
   value: 15
   name: Quotations from Mao Zedong
+  trophyUnlocked: 0
 --- !u!135 &10142426
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2721,6 +2722,7 @@ MonoBehaviour:
   mass: 20
   value: 40
   name: Lamp
+  trophyUnlocked: 0
 --- !u!1001 &176738297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2793,6 +2795,7 @@ MonoBehaviour:
   mass: 50
   value: 20
   name: Coffee Table
+  trophyUnlocked: 0
 --- !u!4 &187873876 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013110065670, guid: 62f475476f29d554caa6b9e6b8c5e1c5,
@@ -3218,6 +3221,7 @@ MonoBehaviour:
   mass: 2
   value: 3
   name: Cup of Tea
+  trophyUnlocked: 0
 --- !u!135 &209247728
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4076,6 +4080,7 @@ MonoBehaviour:
   mass: 0.1
   value: 1
   name: Sentimental Family Photo
+  trophyUnlocked: 0
 --- !u!135 &330735251
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5009,6 +5014,7 @@ MonoBehaviour:
   mass: 2
   value: 10
   name: Vase
+  trophyUnlocked: 0
 --- !u!4 &390216603 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 423298, guid: 4d005ffd82a112e41a4eadc56613f261,
@@ -5105,6 +5111,7 @@ MonoBehaviour:
   mass: 0.1
   value: 1
   name: Sentimental Family Photo
+  trophyUnlocked: 0
 --- !u!1001 &400154311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6084,6 +6091,7 @@ MonoBehaviour:
   mass: 15
   value: 40
   name: Collection of Books
+  trophyUnlocked: 0
 --- !u!1 &440894620 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 4b34dc267e64b6e40aecec5de029b9d2,
@@ -6124,6 +6132,7 @@ MonoBehaviour:
   mass: 50
   value: 400
   name: Cooker Hood
+  trophyUnlocked: 0
 --- !u!1001 &453281260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9874,6 +9883,7 @@ MonoBehaviour:
   mass: 2
   value: 30
   name: Joanne's Favourite Vase
+  trophyUnlocked: 0
 --- !u!135 &689038540
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9914,6 +9924,7 @@ MonoBehaviour:
   mass: 10
   value: 3000
   name: Laptop
+  trophyUnlocked: 0
 --- !u!135 &693838708
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10335,6 +10346,7 @@ MonoBehaviour:
   mass: 10
   value: 50
   name: Boxes
+  trophyUnlocked: 0
 --- !u!1001 &725303471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10417,6 +10429,7 @@ MonoBehaviour:
   mass: 10
   value: 5
   name: Vase
+  trophyUnlocked: 0
 --- !u!4 &733821999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010046464246, guid: 9a66f245c37ec7a46aba1dfc2b22a03b,
@@ -10750,6 +10763,7 @@ MonoBehaviour:
   mass: 0.1
   value: 5
   name: Nice Picture
+  trophyUnlocked: 0
 --- !u!135 &763693839
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12118,6 +12132,7 @@ MonoBehaviour:
   mass: 30
   value: 20
   name: Potted Plant
+  trophyUnlocked: 0
 --- !u!1001 &887258293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12672,6 +12687,7 @@ MonoBehaviour:
   mass: 2
   value: 10
   name: Vase
+  trophyUnlocked: 0
 --- !u!64 &948391090
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13204,6 +13220,7 @@ MonoBehaviour:
   mass: 2
   value: 5
   name: Small Box
+  trophyUnlocked: 0
 --- !u!4 &989181056 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 423298, guid: 4d005ffd82a112e41a4eadc56613f261,
@@ -13286,6 +13303,7 @@ MonoBehaviour:
   mass: 1
   value: 10
   name: Clock
+  trophyUnlocked: 0
 --- !u!1 &997537494
 GameObject:
   m_ObjectHideFlags: 0
@@ -13410,6 +13428,7 @@ MonoBehaviour:
   mass: 1
   value: 215
   name: iPhone X 256 GB - Space Gray - Unlocked
+  trophyUnlocked: 0
 --- !u!135 &1010966416
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13583,6 +13602,7 @@ MonoBehaviour:
   mass: 2
   value: 4
   name: Book
+  trophyUnlocked: 0
 --- !u!64 &1028704231
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13677,6 +13697,7 @@ MonoBehaviour:
   mass: 0.1
   value: 1
   name: Sentimental Family Photo
+  trophyUnlocked: 0
 --- !u!4 &1036806934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 465306, guid: 4a2ebbdc6e924d84f832badd099991db,
@@ -15812,6 +15833,7 @@ MonoBehaviour:
   mass: 1
   value: 3
   name: Notebook
+  trophyUnlocked: 0
 --- !u!4 &1211804693 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 429396, guid: ed9b3755bf5a4c44e94cca620f2a57ef,
@@ -15839,6 +15861,7 @@ MonoBehaviour:
   mass: 4
   value: 10
   name: Large Box
+  trophyUnlocked: 0
 --- !u!1001 &1213861115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16706,6 +16729,7 @@ MonoBehaviour:
   mass: 0.1
   value: 5
   name: Nice Picture
+  trophyUnlocked: 0
 --- !u!135 &1294039880
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17103,6 +17127,7 @@ MonoBehaviour:
   mass: 1
   value: 3
   name: Notebook Stack
+  trophyUnlocked: 0
 --- !u!1 &1330642882
 GameObject:
   m_ObjectHideFlags: 0
@@ -18255,6 +18280,7 @@ MonoBehaviour:
   mass: 15
   value: 40
   name: Collection of Books
+  trophyUnlocked: 0
 --- !u!1001 &1413406110
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18577,7 +18603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 81154777d5417884981849c5243f6c01, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11410038, guid: 81154777d5417884981849c5243f6c01, type: 3}
       propertyPath: m_Color.b
@@ -19110,6 +19136,7 @@ MonoBehaviour:
   mass: 2
   value: 10
   name: Vase
+  trophyUnlocked: 0
 --- !u!1 &1493182804
 GameObject:
   m_ObjectHideFlags: 0
@@ -19198,6 +19225,7 @@ MonoBehaviour:
   mass: 0.1
   value: 5
   name: Nice Picture
+  trophyUnlocked: 0
 --- !u!135 &1494939008
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20270,6 +20298,7 @@ MonoBehaviour:
   mass: 2
   value: 4
   name: Vase
+  trophyUnlocked: 0
 --- !u!4 &1581339576 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010046464246, guid: 9a66f245c37ec7a46aba1dfc2b22a03b,
@@ -20565,6 +20594,7 @@ MonoBehaviour:
   mass: 0.1
   value: 3
   name: Bubblegum Scented Candle
+  trophyUnlocked: 0
 --- !u!64 &1596173900
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21042,6 +21072,7 @@ MonoBehaviour:
   mass: 4
   value: 5
   name: Stack of Books
+  trophyUnlocked: 0
 --- !u!65 &1627663458
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21750,6 +21781,7 @@ MonoBehaviour:
   mass: 40
   value: 50
   name: Chest of Drawers
+  trophyUnlocked: 0
 --- !u!1001 &1683325799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21992,6 +22024,7 @@ MonoBehaviour:
   mass: 50
   value: 40
   name: Rocking Chair
+  trophyUnlocked: 0
 --- !u!208 &1695528361
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -22202,6 +22235,7 @@ MonoBehaviour:
   mass: 0.1
   value: 1
   name: Sentimental Family Photo
+  trophyUnlocked: 0
 --- !u!1001 &1706756637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22939,6 +22973,7 @@ MonoBehaviour:
   mass: 2
   value: 20
   name: 
+  trophyUnlocked: 0
 --- !u!1 &1756384419 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4912687875096982103, guid: 7d1c0a31ab806eb41aa82f229bdc57e1,
@@ -23076,6 +23111,7 @@ MonoBehaviour:
   mass: 15
   value: 40
   name: Collection of Books
+  trophyUnlocked: 0
 --- !u!4 &1780763691 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010046464246, guid: 9a66f245c37ec7a46aba1dfc2b22a03b,
@@ -23276,6 +23312,7 @@ MonoBehaviour:
   mass: 4
   value: 5
   name: Stack of Books
+  trophyUnlocked: 0
 --- !u!1001 &1785786040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23502,6 +23539,7 @@ MonoBehaviour:
   mass: 10
   value: 50
   name: Curtains
+  trophyUnlocked: 0
 --- !u!64 &1802794513
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24073,6 +24111,7 @@ MonoBehaviour:
   mass: 0.1
   value: 1
   name: Sentimental Family Photo
+  trophyUnlocked: 0
 --- !u!1001 &1832713805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24490,6 +24529,7 @@ MonoBehaviour:
   mass: 0.1
   value: 4
   name: Lavender Scented Candle
+  trophyUnlocked: 0
 --- !u!64 &1856308114
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24525,6 +24565,7 @@ MonoBehaviour:
   mass: 2
   value: 10
   name: Vase
+  trophyUnlocked: 0
 --- !u!114 &1860021319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24540,6 +24581,7 @@ MonoBehaviour:
   mass: 0
   value: 0
   name: 
+  trophyUnlocked: 0
 --- !u!64 &1860021320
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24575,6 +24617,7 @@ MonoBehaviour:
   mass: 500
   value: 200
   name: Sofa
+  trophyUnlocked: 0
 --- !u!1001 &1861241071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24928,6 +24971,7 @@ MonoBehaviour:
   mass: 2
   value: 10
   name: Vase
+  trophyUnlocked: 0
 --- !u!64 &1887194129
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25686,6 +25730,7 @@ MonoBehaviour:
   mass: 10
   value: 25
   name: Desk Lamp
+  trophyUnlocked: 0
 --- !u!1001 &1928197851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26285,6 +26330,7 @@ MonoBehaviour:
   mass: 2
   value: 5
   name: Small Box
+  trophyUnlocked: 0
 --- !u!1 &1982520304
 GameObject:
   m_ObjectHideFlags: 0
@@ -28154,6 +28200,7 @@ MonoBehaviour:
   mass: 15
   value: 40
   name: Collection of Books
+  trophyUnlocked: 0
 --- !u!1001 &2112322942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28747,6 +28794,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840205837513366793, guid: 853ad032d9a2b02fc946d0d55f5e72ac,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840205837513366793, guid: 853ad032d9a2b02fc946d0d55f5e72ac,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5957182587040933981, guid: 853ad032d9a2b02fc946d0d55f5e72ac,
+        type: 3}
+      propertyPath: trophyUnlocked
+      value: 206217
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853ad032d9a2b02fc946d0d55f5e72ac, type: 3}
