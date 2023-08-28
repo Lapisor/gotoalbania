@@ -159,10 +159,10 @@ public class jacobAI : MonoBehaviour
                 loseInterestTimer = loseInterestTimerMax;
                 losingInterest = false;
                 losingInterestSquared = true;
-                if(this.GetComponent<NavMeshAgent>().speed > 1.2)
+                if(this.GetComponent<NavMeshAgent>().speed > 4)
                 {
-                    this.GetComponent<NavMeshAgent>().speed -= (loseInterestSquaredTimer / 2000);
-                    this.GetComponent<NavMeshAgent>().acceleration -= (loseInterestSquaredTimer / 2000);
+                    this.GetComponent<NavMeshAgent>().speed -= (loseInterestSquaredTimer / 6000);
+                    this.GetComponent<NavMeshAgent>().acceleration -= (loseInterestSquaredTimer / 6000);
                 }
             }
         }
