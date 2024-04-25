@@ -213,6 +213,10 @@ public class jacobAI : MonoBehaviour
                     patrolling = false;
                     this.GetComponent<NavMeshAgent>().SetDestination(_mHitInfo.transform.position);
                 }
+                else
+                {
+                    
+                }
             }
             else
             {
