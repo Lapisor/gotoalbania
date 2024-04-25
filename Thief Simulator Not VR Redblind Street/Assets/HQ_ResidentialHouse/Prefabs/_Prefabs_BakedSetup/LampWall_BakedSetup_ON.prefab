@@ -54,8 +54,8 @@ Light:
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.0218
+    m_NormalBias: 0
+    m_NearPlane: 0.17
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
