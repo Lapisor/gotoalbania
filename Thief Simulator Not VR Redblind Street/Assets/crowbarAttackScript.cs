@@ -33,6 +33,12 @@ public class crowbarAttackScript : MonoBehaviour
             this.GetComponent<Animator>().SetTrigger("Attack");
             coolindownin = true;
         }
+        else if (Input.GetAxis("InteractAlt") > 0 && coolindownin != true)
+        {
+            cooldownTimer = cooldown;
+            this.GetComponent<Animator>().SetTrigger("Attack");
+            coolindownin = true;
+        }
         if (coolindownin)
         {
             staminaBar.SetActive(true);

@@ -82,7 +82,7 @@ public class playerObjDetector : MonoBehaviour
         {
             theText.gameObject.SetActive(true);
             theText.text = "'E' to pick up " + other.GetComponent<StealableObject>().name;
-            if (Input.GetKey(KeyCode.E))    
+            if (Input.GetButtonDown("Steal"))    
             {
                 if(player.weightCarried + selectedObject.GetComponent<StealableObject>().mass <= 2000)
                 {
@@ -127,15 +127,19 @@ public class playerObjDetector : MonoBehaviour
             theText.gameObject.SetActive(true);
             theText.text = selectedObject.GetComponent<interactable>().displayMessage;
 
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetButtonDown("Steal"))
             {
                 selectedObject.GetComponent<interactable>().contactInteractable();
 
             }
-            if (Input.GetKey(KeyCode.F))
+            if (Input.GetButtonDown("Interact"))
             {
                 selectedObject.GetComponent<interactable>().contactSecondaryInteractable();
 
+            }
+            else if(Input.GetAxis("InteractAlt") < 0)
+            {
+                selectedObject.GetComponent<interactable>().contactSecondaryInteractable();
             }
         }
     }

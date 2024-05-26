@@ -18,13 +18,13 @@ public class openTheDoor : MonoBehaviour
     {
         if (doorOpen)
         {
-            GetComponentInParent<interactable>().displayMessage = "'F' to Close Door";
+            GetComponentInParent<interactable>().displayMessage = "'R' to Close Door";
             GetComponentInParent<interactable>().enabled = false;
 
         }
         if (doorOpen != true)
         {
-            GetComponentInParent<interactable>().displayMessage = "'F' to Open Door";
+            GetComponentInParent<interactable>().displayMessage = "'R' to Open Door";
         }
     }
 

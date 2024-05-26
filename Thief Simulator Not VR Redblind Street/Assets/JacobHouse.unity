@@ -43764,6 +43764,86 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4452573389016253650, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R'' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452573389050483953, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R'' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452573390092939752, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R'' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452573390464948227, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R'' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038541733635175041, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R'' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038541734136377677, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R'' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038541734643907021, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R'' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038541734702873339, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R'' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038541735439785559, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R'' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944443202106945620, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R'' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944443202630343103, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R'' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944443203672538278, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R'' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944443203707415685, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R'' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221147808154562001, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R '' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221147808655961629, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R '' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221147809258865355, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R '' to Open Door'
+      objectReference: {fileID: 0}
     - target: {fileID: 7221147809266173906, guid: ed00d226e317daf48af501ef0d1d5f76,
         type: 3}
       propertyPath: m_RootOrder
@@ -43833,6 +43913,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 63.07065
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221147809534666065, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R '' to Open Door'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221147809727161959, guid: ed00d226e317daf48af501ef0d1d5f76,
+        type: 3}
+      propertyPath: displayMessage
+      value: '''R '' to Open Door'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed00d226e317daf48af501ef0d1d5f76, type: 3}
@@ -46569,6 +46659,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jacob
       objectReference: {fileID: 0}
+    - target: {fileID: 4912687875096982103, guid: 7d1c0a31ab806eb41aa82f229bdc57e1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4912687875121948247, guid: 7d1c0a31ab806eb41aa82f229bdc57e1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -47969,7 +48064,7 @@ PrefabInstance:
     - target: {fileID: 5089254672827159848, guid: 4f034cc88fe2b32409722679cae34e28,
         type: 3}
       propertyPath: displayMessage
-      value: '''F'' to exit the house'
+      value: '''R'' to exit the house'
       objectReference: {fileID: 0}
     - target: {fileID: 5089254672827159848, guid: 4f034cc88fe2b32409722679cae34e28,
         type: 3}

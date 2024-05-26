@@ -27,13 +27,13 @@ public class crouchScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetButton("Crouch"))
         {
             isCrouching = true;
             this.GetComponent<CharacterController>().height = crouchedSize;
             Jacob.mTargetDetectionDistance = crouchedDetection;
         }
-        if (Input.GetKeyUp(KeyCode.LeftControl))
+        if (Input.GetButtonUp("Crouch"))
         {
             isCrouching = false;
             this.GetComponent<CharacterController>().height *= 1.3f;
